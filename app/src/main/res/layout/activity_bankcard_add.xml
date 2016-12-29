@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".activity.BankcardAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/ba_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:tag="(0,120)">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_logo"
+            android:layout_width="72px"
+            android:layout_height="45px"
+            android:layout_gravity="center_vertical"
+
+            android:tag="{0,0,0,0}(72,45)"
+
+            fresco:placeholderImage="@mipmap/logo_unionpay" />
+
+        <LinearLayout
+            android:id="@+id/ll_01"
+            android:layout_width="wrap_content"
+            android:layout_height="58px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:orientation="horizontal"
+            android:tag="{20,0,0,0}(0,58)">
+
+            <TextView
+                android:id="@+id/tv_01"
+                android:layout_width="123px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="(123,0,26)"
+                android:text="@string/ba_01"
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+            <ImageView
+                android:layout_width="15px"
+                android:layout_height="25px"
+                android:layout_gravity="center_vertical"
+
+                android:src="@mipmap/btn_right"
+                android:tag="{0,0,0,0}(15,25)" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_marginTop="18px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="{0,18,0,0}(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,0,0}(11,11)"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25px"
+                android:src="@mipmap/yinhang_person"
+                android:tag="(30,30){25,0,0,0}" />
+
+            <TextView
+                android:layout_width="113px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="{33,0,0,0}(113,0,30)"
+                android:text="@string/ba_02"
+                android:textColor="#585858"
+                tools:layout_marginLeft="33px"
+
+                tools:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_01"
+                android:layout_width="394px"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/ba_02_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:tag="{0,0,0,0}[5,0,5,0](394,0,30)"
+                android:textColor="#585858"
+                android:textColorHint="#585858"
+                tools:paddingLeft="5px"
+                tools:paddingRight="5px"
+                tools:textSize="30px" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+        <!--
+                <LinearLayout
+                    android:layout_width="57px"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:tag="(57,0)"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="11px"
+                        android:layout_height="11px"
+                        android:layout_marginRight="1px"
+                        android:layout_marginTop="5px"
+                        android:src="@mipmap/ic_symbol_circle_mid_grey"
+                        android:tag="{0,5,1,0}(11,11)"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="19px"
+                        android:layout_height="19px"
+                        android:layout_marginTop="11px"
+                        android:src="@mipmap/ic_symbol_circle_big_red"
+                        android:tag="{0,11,0,0}(19,19)"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="11px"
+                        android:layout_height="11px"
+                        android:layout_marginRight="1px"
+                        android:layout_marginTop="11px"
+                        android:src="@mipmap/ic_symbol_circle_mid_grey"
+                        android:tag="{0,11,1,0}(11,11)"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="11px"
+                        android:layout_height="11px"
+                        android:layout_marginRight="1px"
+                        android:layout_marginTop="12px"
+                        android:src="@mipmap/ic_symbol_circle_mid_grey"
+                        android:tag="{0,12,1,0}(11,11)"
+                        android:visibility="visible" />
+                </LinearLayout>-->
+
+
+        <!--
+        <TextView
+            android:layout_width="242px"
+            android:layout_height="wrap_content"
+            android:tag="{3,6,0,0}(242,0,26)"
+            android:text="@string/ba_03"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="8px"
+            tools:textSize="26px" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="394px"
+            android:layout_height="51px"
+            android:background="@drawable/selector_bg_main_04_edit"
+            android:gravity="center"
+            android:hint="@string/ba_03_hint"
+            android:inputType="number"
+            android:maxLines="1"
+            android:tag="{0,12,0,0}[5,0,5,0](394,51,26)"
+            android:textColorHint="@color/colorTextHint"
+            tools:layout_marginTop="12px"
+            tools:paddingLeft="5px"
+            tools:paddingRight="5px"
+            tools:textSize="26px" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25px"
+                android:src="@mipmap/bank_number"
+                android:tag="(30,30){25,0,0,0}" />
+
+            <TextView
+                android:layout_width="113px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="{33,0,0,0}(113,0,30)"
+                android:text="卡号"
+                android:textColor="#585858"
+                tools:layout_marginLeft="33px"
+
+                tools:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_02"
+                android:layout_width="394px"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入银行卡号"
+                android:inputType="number"
+                android:maxLines="1"
+                android:tag="{0,0,0,0}[5,0,5,0](394,0,30)"
+                android:textColor="#585858"
+                android:textColorHint="#585858"
+                tools:paddingLeft="5px"
+                tools:paddingRight="5px"
+                tools:textSize="30px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,0,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,0,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <!--   <TextView
+               android:layout_width="242px"
+               android:layout_height="wrap_content"
+               android:tag="{3,6,0,0}(242,0,26)"
+               android:text="@string/ba_04"
+               android:textColor="@color/colorBlack"
+               tools:layout_marginLeft="3px"
+               tools:layout_marginTop="8px"
+               tools:textSize="26px" />
+
+           <EditText
+               android:id="@+id/et_03"
+               android:layout_width="394px"
+               android:layout_height="51px"
+               android:background="@drawable/selector_bg_main_04_edit"
+               android:gravity="center"
+               android:hint="@string/ba_04_hint"
+               android:inputType="phone"
+               android:maxLength="11"
+               android:maxLines="1"
+               android:tag="{0,12,0,0}[5,0,5,0](394,51,26)"
+               android:textColorHint="@color/colorTextHint"
+               tools:layout_marginTop="12px"
+               tools:paddingLeft="5px"
+               tools:paddingRight="5px"
+               tools:textSize="26px" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25px"
+                android:src="@mipmap/phone_pic"
+                android:tag="(30,30){25,0,0,0}" />
+
+            <TextView
+                android:layout_width="113px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="{33,0,0,0}(113,0,30)"
+                android:text="手机号"
+                android:textColor="#585858"
+                tools:layout_marginLeft="33px"
+
+                tools:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_03"
+                android:layout_width="394px"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:inputType="text"
+                android:maxLines="1"
+                android:tag="{0,0,0,0}[5,0,5,0](394,0,30)"
+                android:textColor="#585858"
+                android:textColorHint="#585858"
+                tools:paddingLeft="5px"
+                tools:paddingRight="5px"
+                tools:textSize="30px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="242px"
+            android:layout_height="wrap_content"
+            android:tag="{3,6,0,0}(242,0,26)"
+            android:text="@string/ba_06"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="8px"
+            tools:textSize="26px" />
+
+        <EditText
+            android:id="@+id/et_04"
+            android:layout_width="394px"
+            android:layout_height="51px"
+            android:background="@drawable/selector_bg_main_04_edit"
+            android:gravity="center"
+            android:hint="@string/ba_06_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:tag="{0,12,0,0}[5,0,5,0](394,51,26)"
+            android:textColorHint="@color/colorTextHint"
+            tools:layout_marginTop="12px"
+            tools:paddingLeft="5px"
+            tools:paddingRight="5px"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="22px"
+        android:layout_marginTop="24px"
+        android:tag="{22,24,0,0}(0,0,26)"
+        android:text="@string/ba_05"
+        android:textColor="@color/colorTextHint"
+        android:textSize="26px" />
+
+
+    <Button
+        android:id="@+id/bt_01"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="23px"
+        android:layout_marginRight="23px"
+        android:layout_marginTop="144px"
+        android:background="@drawable/selector_bg_add_bank"
+        android:tag="(0,90,26){23,144,23,0}"
+        android:text="确定"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

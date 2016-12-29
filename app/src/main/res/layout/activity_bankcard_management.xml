@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".activity.BankcardManagementActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/bm_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px"
+            android:onClick="onBack"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:tag="(0,0)"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="242px"
+        android:layout_height="73px"
+        android:background="@drawable/rect_gray"
+        android:orientation="horizontal"
+        android:tag="(254,73){0,94,0,0}"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:tag="(24,24)"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:src="@mipmap/add_bankcard"
+
+            />
+        <TextView
+            android:tag="{20,0,0,0}(0,0,26)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="@string/bm_01"
+            tools:textSize="26px"
+            android:textColor="#41B0E8"/>
+    </LinearLayout>
+</LinearLayout>

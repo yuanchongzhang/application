@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".activity.PayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/pay_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_marginTop="27px"
+        android:orientation="horizontal"
+        android:tag="{0,27,0,0}(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:tag="(57,0)">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="242px"
+            android:layout_height="wrap_content"
+            android:tag="{3,21,0,0}(242,0,26)"
+            android:text="@string/wor_01"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="20px"
+            tools:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="26px"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:tag="{3,20,26,0}(242,0,26)"
+            android:text="0.0元"
+            android:textColor="@color/colorForgotPink"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="20px"
+            tools:textSize="26px" />
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/money_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="{0,0,0,0}(0,90)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(242,0,30)"
+            android:text="账户余额"
+
+            android:textColor="#666666"
+            tools:layout_marginLeft="25px"
+            tools:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6px"
+                android:gravity="right|center_vertical"
+                android:tag="{3,0,6,0}(242,0,30)"
+                android:text="0.0"
+                android:textColor="#41B0E8"
+                android:textStyle="bold"
+                tools:layout_marginLeft="3px"
+                tools:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24px"
+                android:tag="(0,0,26){0,0,24,0}"
+                android:text="元"
+                android:textSize="26px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lines1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:id="@+id/daishou_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,90)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(242,0,30)"
+            android:text="@string/ma_03"
+            android:textColor="#666666"
+            tools:layout_marginLeft="25px"
+            tools:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="26px"
+            android:gravity="right|center_vertical"
+            android:tag="{3,0,26,0}(242,0,26)"
+            android:text="0.0元"
+            android:textColor="#666666"
+
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lines2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:tag="(57,0)">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="242px"
+            android:layout_height="wrap_content"
+            android:tag="{3,21,0,0}(242,0,26)"
+            android:text="@string/pay_02"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="20px"
+            tools:textSize="26px" />
+
+            <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="26px"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:tag="{3,20,26,0}(242,0,26)"
+            android:text="0元-0元"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="20px"
+            tools:textSize="26px" />
+    </LinearLayout>-->
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="90px"
+         android:orientation="horizontal"
+         android:background="@color/colorWhite"
+         android:tag="(0,90)">
+
+         <LinearLayout
+             android:layout_width="57px"
+             android:layout_height="match_parent"
+             android:baselineAligned="false"
+             android:gravity="center_horizontal"
+             android:orientation="vertical"
+             android:visibility="gone"
+             android:tag="(57,0)">
+
+             <ImageView
+                 android:layout_width="11px"
+                 android:layout_height="11px"
+                 android:layout_marginTop="5px"
+                 android:src="@mipmap/ic_symbol_circle_mid_grey"
+                 android:tag="{0,5,1,0}(11,11)"
+                 android:visibility="visible" />
+
+             <ImageView
+                 android:layout_width="19px"
+                 android:layout_height="19px"
+                 android:layout_marginTop="11px"
+                 android:src="@mipmap/ic_symbol_circle_big_red"
+                 android:tag="{0,11,0,0}(19,19)"
+                 android:visibility="visible" />
+
+             <ImageView
+                 android:id="@+id/iv_01"
+                 android:layout_width="11px"
+                 android:layout_height="11px"
+                 android:layout_marginTop="11px"
+                 android:src="@mipmap/ic_symbol_circle_mid_grey"
+                 android:tag="{0,11,1,0}(11,11)"
+                 android:visibility="visible" />
+
+             <ImageView
+                 android:id="@+id/iv_02"
+                 android:layout_width="11px"
+                 android:layout_height="11px"
+                 android:layout_marginTop="12px"
+                 android:src="@mipmap/ic_symbol_circle_mid_grey"
+                 android:tag="{0,12,1,0}(11,11)"
+                 android:visibility="visible" />
+         </LinearLayout>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+
+
+             android:tag="{25,0,0,0}(242,0,30)"
+             android:text="输入金额"
+             android:textColor="#666666"
+             tools:layout_marginLeft="25px"
+             tools:textSize="30px" />
+
+         <EditText
+             android:id="@+id/et_01"
+             android:layout_width="200px"
+             android:layout_height="66px"
+             android:background="#F6F6F6"
+             android:gravity="right"
+
+             android:layout_gravity="right"
+
+             android:maxLines="1"
+             android:inputType="numberDecimal"
+             android:tag="{0,0,0,0}[5,0,5,0](200,66,26)"
+             android:layout_marginLeft="18px"
+             tools:paddingLeft="5px"
+             tools:paddingRight="5px"
+             tools:textSize="26px" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="元"
+             android:textColor="@color/colorBlack"
+             android:layout_gravity="center_vertical|right"
+             android:layout_marginLeft="10px"
+             android:gravity="right"
+
+             />
+     </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,90)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:tag="{25,0,0,0}(242,0,30)"
+            android:text="输入金额"
+            android:textColor="#666666"
+            tools:layout_marginLeft="25px"
+            tools:textSize="30px" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="350px"
+            android:layout_height="68px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="26px"
+            android:layout_weight="9"
+            android:background="@drawable/shape_bg_edu"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:paddingLeft="10px"
+            android:paddingRight="20dp"
+            android:tag="{3,0,26,0}(350,68,26)[10,0,30,0]"
+            android:textColor="#666666"
+            tools:textSize="26px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="元"
+            android:textColor="@color/colorBlack"
+
+            />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:tag="(57,0)">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_01"
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_02"
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="378px"
+            android:layout_height="wrap_content"
+            android:tag="{3,6,0,0}(378,0,26)"
+            android:text="@string/pay_03"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="10px"
+            tools:textSize="26px" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="267px"
+            android:layout_height="51px"
+            android:background="@drawable/selector_bg_main_04_edit"
+            android:gravity="center_vertical|right"
+            android:hint="@string/pay_03_hint"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:tag="{0,12,0,0}[5,0,5,0](267,51,26)"
+            tools:layout_marginTop="12px"
+            tools:paddingLeft="5px"
+            tools:paddingRight="5px"
+            tools:textSize="26px" />
+    </LinearLayout>-->
+
+    <View
+        android:id="@+id/view_last"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(0,0,30)"
+            android:text="@string/pay_04"
+            android:textColor="#666666"
+
+            tools:layout_marginLeft="25px"
+            tools:textSize="30px" />
+
+
+        <ImageView
+            android:id="@+id/iv_cb_01"
+            android:layout_width="33px"
+            android:layout_height="33px"
+            android:layout_gravity="center_vertical"
+
+            android:src="@drawable/selector_ic_main_licai_checkbox"
+            android:tag="{0,0,0,0}(33,33)" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20px"
+            android:gravity="right"
+            android:tag="{20,0,20,0}(0,0,26)"
+            android:text="    "
+
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="20px"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sp_01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:spinnerMode="dropdown" />
+
+    <View
+        android:id="@+id/lines3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:id="@+id/ll_02"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(0,0,30)"
+            android:text="@string/pay_05"
+            android:textColor="#666666"
+
+            tools:layout_marginLeft="25px"
+            tools:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/iv_cb_02"
+            android:layout_width="33px"
+            android:layout_height="33px"
+            android:layout_gravity="center_vertical"
+
+            android:src="@drawable/selector_ic_main_licai_checkbox"
+            android:tag="{0,0,0,0}(33,33)" />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20px"
+            android:gravity="right"
+            android:tag="{20,0,20,0}(0,0,26)"
+            android:text="    "
+            android:textColor="@color/colorBlack"
+
+            tools:layout_marginLeft="20px"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lines4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
+    <Spinner
+        android:id="@+id/sp_02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:id="@+id/ll_03"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_03"
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_04"
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="{3,19,0,0}(0,0,26)"
+            android:text="@string/pay_08"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="19px"
+            tools:textSize="26px" />
+
+        <ImageView
+            android:id="@+id/iv_cb_03"
+            android:layout_width="49px"
+            android:layout_height="47px"
+            android:src="@drawable/selector_ic_main_04_checkbox"
+            android:tag="{0,12,0,0}(49,47)"
+            tools:layout_marginTop="12px" />
+
+        <TextView
+            android:id="@+id/tv_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:gravity="right"
+            android:tag="{20,21,20,0}(0,0,26)"
+            android:text="0.00元"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="20px"
+            tools:layout_marginTop="20px"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pass"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_08"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:tag="{25,0,0,0}(378,0,30)"
+            android:text="@string/pay_07"
+            android:textColor="#666666"
+            tools:layout_marginLeft="25px"
+
+            tools:textSize="30px" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="350px"
+            android:layout_height="66px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/shape_bg_edu"
+            android:gravity="center"
+            android:hint="@string/pay_07_hint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingRight="30px"
+            android:tag="{0,0,40,0}[5,0,5,0](350,66,26)"
+            tools:paddingLeft="5px"
+            tools:paddingRight="5px"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_01"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/shape_bg_login_bt"
+        android:tag="(0,90,30)"
+        android:text="@string/pay_06"
+        android:textColor="@color/colorWhite"
+        android:textSize="30px" />
+
+    <!--  android:background="@drawable/selector_bg_main_04_bt"-->
+</LinearLayout>

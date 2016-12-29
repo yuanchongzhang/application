@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:tag="(0,69)[25,0,0,0]">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/tip_blue"
+            android:tag="(4,28){0,0,16,0}" />
+
+        <TextView
+            android:id="@+id/borrow_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="(28)"
+            android:textColor="@color/colorFirstTextDarkGrey" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="(0,203)">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/borrow_interest_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="(38)"
+                    android:textColor="@color/colorTitleBlue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="(24){0,18,0,0}"
+                    android:textColor="@color/colorHomeTextGrey"
+                    android:text="@string/list_01_item_02"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/borrow_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(38)"
+                        android:textColor="@color/colorYellowInvest"/>
+
+                    <TextView
+                        android:id="@+id/borrow_duration_cn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(24){8,0,0,0}"
+                        android:textColor="@color/colorItemTextGrey2"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="(24){0,18,0,0}"
+                    android:textColor="@color/colorHomeTextGrey"
+                    android:text="@string/list_01_item_03"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/need"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(38)"
+                        android:textColor="@color/colorTitleBlue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(24)"
+                        android:text="万元"
+                        android:textColor="@color/colorItemTextGrey2"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="(24){0,18,0,0}"
+                    android:textColor="@color/colorHomeTextGrey"
+                    android:text="@string/list_01_item_01"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="[25,0,25,0]{0,0,0,20}"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(26){0,0,35,0}"
+                android:text="@string/progress"
+                android:textColor="@color/colorHomeTextGrey"/>
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(28)"
+                android:textColor="@color/colorYellowInvest"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

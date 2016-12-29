@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/shape_juxing_investuse"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:tag="(0,70)">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21px"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:tag="{23,0,0,0}(0,0,28)"
+            android:text="标题：创业使用"
+            android:textColor="#41B0E8"
+
+            android:textStyle="bold"
+            tools:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:tag="{0,0,2,0}(0,0,24)"
+            android:text="投资时间：2015-01-12 17:35"
+            android:textColor="#666666"
+            tools:textSize="24px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:tag="(0,70)">
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:tag="{21,0,0,0}(0,0,26)"
+            android:text="购买人：赵日天"
+            android:textColor="#666666"
+            android:textSize="26px"
+            tools:layout_marginLeft="21px" />
+
+        <TextView
+            android:id="@+id/tv_08"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:tag="{0,0,0,0}(0,0,24)"
+            android:text="转让价格3999.99元"
+            android:textColor="#666666"
+            tools:textSize="24px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_04"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:tag="{21,0,0,0}(0,40,26)"
+        android:text="协议书：2015-01-12 17:35"
+        android:textColor="#666666"
+        tools:layout_marginLeft="21px"
+        tools:textSize="26px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164px"
+
+
+        android:orientation="horizontal"
+        android:tag="{0,0,0,0}(0,164)">
+
+        <LinearLayout
+            android:layout_width="203px"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20px"
+            android:tag="(203,0)[20,0,0,0]">
+
+            <TextView
+                android:id="@+id/tv_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:tag="{0,20,0,0}(0,0,30)"
+                android:text="10期/10期"
+                android:textColor="#41B0E8"
+                android:textStyle="bold"
+                tools:textSize="30px" />
+
+
+            <TextView
+                android:id="@+id/tv_edit_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="33px"
+                android:layout_marginTop="26px"
+                android:tag="(0,0,24){0,26,0,33}"
+                android:text="购买期限/总期数"
+                android:textColor="#A4A4A4"
+                tools:textSize="24px" />
+        </LinearLayout>
+        <!-- <LinearLayout
+             android:layout_width="249px"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:tag="(249,0)">
+
+             <TextView
+                 android:id="@+id/tv_edit_01"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:tag="(0,0,22)"
+                 android:text="购买期限/总期数"
+                 android:textColor="@color/colorBlack"
+                 tools:textSize="22px" />
+
+             <TextView
+                 android:id="@+id/tv_06"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20px"
+                 android:tag="{0,20,0,0}(0,0,22)"
+                 android:text="10期/10期"
+                 android:textColor="@color/colorMainBlue"
+                 android:textStyle="bold"
+                 tools:textSize="22px" />
+         </LinearLayout>
+ -->
+
+
+        <!--  <LinearLayout
+              android:layout_width="237px"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:tag="(237,0)">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:tag="(0,0,22)"
+                  android:text="债权总值"
+                  android:textColor="@color/colorBlack"
+                  tools:textSize="22px" />
+
+              <TextView
+                  android:id="@+id/tv_07"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20px"
+                  android:tag="{0,20,0,0}(0,0,22)"
+                  android:text="3999.99元"
+                  android:textColor="@color/colorMainBlue"
+                  android:textStyle="bold"
+                  tools:textSize="22px" />
+          </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="300px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="(300,0)">
+
+            <TextView
+                android:id="@+id/tv_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:tag="{0,20,0,0}(0,0,30)"
+                android:text="3999.99元/233.30元"
+                android:textColor="#FD9809"
+                android:textStyle="bold"
+                tools:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="26px"
+                android:tag="(0,0,24){0,26,0,33}"
+                android:text="债权总值"
+                android:textColor="#A4A4A4"
+                tools:textSize="22px" />
+
+
+        </LinearLayout>
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:tag="(204,0)">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:tag="(0,0,22)"
+                 android:text="利率"
+                 android:textColor="@color/colorBlack"
+                 tools:textSize="22px" />
+
+
+             <TextView
+                 android:id="@+id/tv_05"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:tag="(0,0,42)"
+                 android:text="12"
+                 android:textColor="@color/colorForgotPink"
+                 android:textStyle="bold"
+                 tools:textSize="42px" />
+         </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(200,0)">
+
+            <TextView
+                android:id="@+id/tv_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:tag="{0,25,0,0}(0,0,30)"
+                android:text="12"
+                android:textColor="#41B0E8"
+                android:textStyle="bold"
+                tools:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="26px"
+                android:tag="(0,0,24){0,26,0,33}"
+                android:text="利率"
+                android:textColor="#A4A4A4"
+                tools:textSize="22px" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="302px"
+
+         android:tag="(0,302)">
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:tag="(0,280)">
+
+
+
+
+
+         </FrameLayout>
+
+     </LinearLayout>-->
+
+</LinearLayout>

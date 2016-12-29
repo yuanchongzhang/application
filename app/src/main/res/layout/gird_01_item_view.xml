@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="200px"
+        android:layout_height="184px"
+        android:layout_marginBottom="18px"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="18px"
+        android:background="@drawable/shape_bg_girditemview"
+        android:orientation="vertical"
+        android:tag="{15,18,15,18}(200,184)">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:tag="(0,0)"
+            fresco:placeholderImage="@mipmap/ic_main_fifthfragment_camera"
+            fresco:roundedCornerRadius="8dp" />
+
+        <ImageView
+            android:id="@+id/iv_02"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_marginLeft="154px"
+            android:layout_marginTop="16px"
+            android:alpha="0.5"
+            android:src="@drawable/selector_iv_applyvip_checkbox"
+            android:tag="{154,16,0,0}(36,36)" />
+
+        <LinearLayout
+            android:layout_width="150px"
+            android:layout_height="38px"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10px"
+            android:alpha="0.5"
+            android:background="@drawable/shape_bg_applyvip_text"
+            android:gravity="center"
+            android:tag="{0,0,0,10}(150,38)"
+            android:textColor="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:tag="(0,0,24)"
+                android:textColor="@color/colorWhite"
+                android:textSize="24px"
+                tools:text="name" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55555555"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="448px"
+        android:layout_height="250px"
+        android:background="@drawable/shape_dialog_01"
+        android:orientation="vertical"
+        android:tag="(448,250)">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="171px"
+            android:gravity="center"
+            android:tag="(0,171)">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(30)"
+                android:text="确定退出当前账号"
+                android:textColor="#585858" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorDialog"
+            android:tag="(0,1)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78px"
+            android:orientation="horizontal"
+            android:tag="(0,78)">
+
+            <TextView
+                android:id="@+id/dl_tv_02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="(0,0,26)"
+                android:text="确定"
+                android:gravity="center"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/dl_tv_01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="(0,0,26)"
+                android:text="取消"
+                android:gravity="center"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

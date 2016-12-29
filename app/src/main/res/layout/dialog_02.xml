@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55555555"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="448px"
+        android:layout_height="250px"
+        android:background="@drawable/shape_dialog_01"
+        android:orientation="vertical"
+        android:tag="(448,250)">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="171px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="(0,171)">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="(0,0,26)"
+                android:gravity="center|bottom"
+                android:text="温馨提示"
+                android:textColor="@color/colorBlack"
+                android:textSize="26px" />
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="408px"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:tag="(408,0,22)"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorDialog"
+            android:tag="(0,1)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78px"
+            android:orientation="horizontal"
+            android:tag="(0,78)">
+
+            <TextView
+                android:id="@+id/dl_tv_01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="(0,0,26)"
+                android:text="取消"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/dl_tv_02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="(0,0,26)"
+                android:text="确定"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="26px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

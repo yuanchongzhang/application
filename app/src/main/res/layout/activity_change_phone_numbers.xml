@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    tools:context=".activity.TestActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/cpn_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:tag="{0,30,0,0}(0,90)">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:tag="{23,0,0,0}(29)"
+            android:text="@string/register_01"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="请输入当前绑定的手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:tag="{107,0,0,0}(29)"
+            android:textColorHint="@color/colorTextHint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/layer_gray_top_bottom"/>
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        tools:layout_marginTop="25px"
+        android:orientation="horizontal"
+        android:tag="{0,25,0,0}(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:tag="(57,0)">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,0,0}(11,11)"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:layout_marginRight="1px"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:layout_marginRight="1px"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="167px"
+            android:layout_height="wrap_content"
+            android:tag="{3,10,0,0}(167,0,26)"
+            android:text="@string/cpn_01"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="10px"
+            tools:textSize="26px" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="469px"
+            android:layout_height="51px"
+            android:background="@drawable/selector_bg_main_04_edit"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:hint="@string/cpn_01_hint"
+            android:textColorHint="@color/colorTextHint"
+            android:tag="{0,12,0,0}[35,0,5,0](469,51,22)"
+            tools:layout_marginTop="12px"
+            tools:paddingLeft="35px"
+            tools:paddingRight="5px"
+            tools:textSize="22px" />
+    </LinearLayout>-->
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:tag="(57,0)">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:layout_marginRight="1px"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,0,0}(11,11)"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,0,0}(11,11)"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="167px"
+            android:layout_height="wrap_content"
+            android:tag="{3,10,0,0}(167,0,26)"
+            android:text="@string/register_02"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="10px"
+            tools:textSize="26px" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="266px"
+            android:layout_height="51px"
+            android:background="@drawable/selector_bg_main_04_edit"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="6"
+            android:hint="@string/register_02_hint"
+            android:textColorHint="@color/colorTextHint"
+            android:tag="{0,12,0,0}[35,0,5,0](266,51,22)"
+            tools:layout_marginTop="12px"
+            tools:paddingLeft="35px"
+            tools:paddingRight="5px"
+            tools:textSize="22px" />
+        <Button
+            android:tag="{38,10,0,0}(165,51,23)"
+            android:id="@+id/bt_getcode"
+            android:layout_width="165px"
+            android:layout_height="51px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="38px"
+            android:text="@string/register_021"
+            android:textSize="23px"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/selector_bg_register_code_bt"/>
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:tag="(0,90)">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="{23,0,0,0}(29)"
+            android:text="@string/register_02"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/register_02_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:tag="{80,0,0,0}(29)"
+            android:textColorHint="@color/colorTextHint" />
+
+        <Button
+            android:id="@+id/bt_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#41B0E8"
+            android:singleLine="true"
+            android:tag="{0,0,25,0}(144,62,24)"
+            android:text="@string/register_021"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/layer_gray_top_bottom"/>
+
+    <Button
+        android:id="@+id/bt_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_login_bt"
+        android:tag="(0,90,26){25,60,25,0}"
+        android:text="@string/main_04_bt_01"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#41B0E8"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/login_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="384px"-->
+    <!--android:tag="(0,384)" -->
+    <!--android:gravity="center">-->
+    <!--<ImageView-->
+    <!--android:layout_width="290px"-->
+    <!--android:layout_height="105px"-->
+    <!--android:tag="(290,105)"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@mipmap/ic_login_logo"/>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="(0,90){0,30,0,0}">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/login"
+            android:tag="(34,40){20,0,0,0}" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/login_new_account_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:tag="{25,0,0,0}(30)"
+            android:textColorHint="@color/colorTextHint" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:tag="(0,0)">-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2px"-->
+        <!--android:background="@color/colorMainBlue"-->
+        <!--android:tag="{35,4,117,0}(0,2)"-->
+        <!--tools:layout_marginLeft="35px"-->
+        <!--tools:layout_marginRight="117px"-->
+        <!--tools:layout_marginTop="4px"></View>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/split_line_color">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:tag="(0,90)">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mima"
+            android:tag="(34,40){20,0,0,0}" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="请输入6~15位密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:tag="{25,0,0,0}(30)"
+            android:textColorHint="@color/colorTextHint" />
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:tag="(0,0)">-->
+
+        <!-- -->
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2px"-->
+        <!--android:background="@color/colorMainBlue"-->
+        <!--android:tag="{35,4,117,0}(0,2)"-->
+        <!--tools:layout_marginLeft="35px"-->
+        <!--tools:layout_marginRight="117px"-->
+        <!--tools:layout_marginTop="4px"></View>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="98px"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:tag="(0,98)">-->
+
+
+    <!--</LinearLayout>-->
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_login_bt"
+        android:gravity="center"
+        android:tag="{24,58,24,30}(670,90,34)"
+        android:text="@string/login_title"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/bt_registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="(27){24,0,0,0}"
+            android:text="@string/login_registered"
+            android:textColor="@color/colorLakeBlue" />
+
+        <TextView
+            android:id="@+id/tv_forgotpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="{0,0,22,0}(27)"
+            android:text="@string/login_forgotpassword"
+            android:textColor="@color/colorLakeBlue" />
+
+    </LinearLayout>
+
+</LinearLayout>

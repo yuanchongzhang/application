@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    tools:context=".activity.SafetyCertificateActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/sc_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/real_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:tag="(0,100)"
+        android:background="@color/colorWhite"
+        >
+        <ImageView
+            android:id="@+id/iv_01"
+            android:tag="{36,0,0,0}(43,37)"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:layout_marginLeft="36px"
+            android:src="@mipmap/safety_pic"/>
+        <TextView
+            android:tag="{25,0,0,0}(0,0,26)"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sc_01"
+            android:textColor="#585858"
+            android:textSize="16sp"
+            android:layout_marginLeft="25px"
+
+            />
+        <TextView
+            android:id="@+id/tv_01"
+            android:tag="{0,0,20,0}(0,0,26)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sc_012"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:layout_marginRight="20px"/>
+        <ImageView
+            android:id="@+id/iv_am_01"
+            android:tag="{0,0,25,0}(19,30)"
+            android:layout_width="51px"
+            android:layout_height="58px"
+            tools:layout_marginRight="18px"
+            android:src="@mipmap/btn_right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/colorGreydividingline2"
+        android:tag="{0,0,0,0}(0,1)" />
+    <LinearLayout
+        android:id="@+id/bind_mobil_layout"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:tag="(0,100)"
+        android:background="@color/colorWhite"
+        >
+        <ImageView
+            android:id="@+id/iv_02"
+            android:tag="{36,0,0,0}(43,37)"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:layout_marginLeft="36px"
+            android:src="@mipmap/bind_mobil_pic"/>
+        <TextView
+            android:tag="{25,0,0,0}(0,0,26)"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sc_02"
+            android:textColor="#585858"
+            android:textSize="16sp"
+            android:layout_marginLeft="25px"/>
+        <TextView
+            android:id="@+id/tv_02"
+            android:tag="{0,0,20,0}(0,0,26)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="123****1548"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:layout_marginRight="20px"/>
+        <ImageView
+            android:id="@+id/iv_am_02"
+            android:tag="{0,0,25,0}(19,30)"
+            android:layout_width="51px"
+            android:layout_height="58px"
+            tools:layout_marginRight="18px"
+            android:src="@mipmap/btn_right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/colorGreydividingline2"
+        android:tag="{0,0,0,0}(0,1)" />
+</LinearLayout>

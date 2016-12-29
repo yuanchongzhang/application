@@ -1,0 +1,991 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context="com.haiying.p2papp.fragment.FourthFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/main_04_title_01"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24px"
+            android:layout_height="38px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_action_back"
+            android:tag="{20,0,0,0}(24,38)"
+            android:visibility="gone"
+            tools:layout_marginLeft="20px" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@mipmap/info_borrow"
+        android:drawablePadding="15px"
+        android:gravity="center_vertical"
+        android:tag="{23,0,0,0}(0,80,28)"
+        android:text="@string/main_04_title_02"
+        android:textColor="#41B0E8"
+        tools:layout_marginLeft="23px"
+        tools:textSize="28px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="321px"
+        android:layout_marginLeft="22px"
+        android:layout_marginRight="22px"
+        android:background="@drawable/shape_juxing_guquan"
+        android:orientation="vertical"
+        android:tag="(0,321){22,0,22,0}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(150,0,26){40,0,0,0}"
+                android:text="借款人： "
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+            <EditText
+                android:id="@+id/text_user"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="用户名"
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="186px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(0,0,26){40,0,0,0}"
+                android:text="性别： "
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+            <LinearLayout
+                android:id="@+id/sex_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="性别"
+                android:textColor="#585858">
+
+                <TextView
+                    android:id="@+id/text_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="66px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="26px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:tag="(0,386,26)[10,0,26,0]"
+                    android:text="性别"
+                    android:textColor="#585858"
+                    android:textSize="26px" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40px"
+                    android:layout_marginRight="26px"
+                    android:background="#D2D2D2"
+                    android:tag="(1,40){0,0,26,0}" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="30px"
+                    android:layout_marginRight="26px"
+                    android:src="@mipmap/arrow_down_zichan"
+                    android:tag="(25,30){0,0,26,0}" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_03"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:orientation="horizontal"
+            android:tag="(0,97)">
+
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(150,0,26){40,0,0,0}"
+                android:text="性别： "
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+
+            <LinearLayout
+                android:id="@+id/sex_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="性别"
+                android:textColor="#585858">
+
+                <TextView
+                    android:id="@+id/text_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="66px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="26px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:tag="(0,386,26)[10,0,26,0]"
+                    android:text=""
+                    android:textColor="#585858"
+                    android:textSize="26px" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40px"
+                    android:layout_marginRight="26px"
+                    android:background="#D2D2D2"
+                    android:tag="(1,40){0,0,26,0}" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="30px"
+                    android:layout_marginRight="26px"
+                    android:src="@mipmap/arrow_down_zichan"
+                    android:tag="(25,30){0,0,26,0}" />
+
+            </LinearLayout>
+
+    <!--        <Spinner
+                android:id="@+id/sp_01"
+                android:layout_width="wrap_content"
+
+
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />-->
+
+        </LinearLayout>
+
+
+       <!-- <LinearLayout
+            android:id="@+id/sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:orientation="horizontal"
+            android:tag="(0,97)">
+
+
+            <TextView
+                android:layout_width="186px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(0,0,26){40,0,0,0}"
+                android:text="性别"
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/text_sex"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="性别"
+                android:textColor="#585858"
+                android:textSize="26px" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/sp_03"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:background="@android:color/transparent" />-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(150,0,26){40,0,0,0}"
+                android:text="联系电话:"
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+            <EditText
+                android:id="@+id/text_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="用户名"
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/jiekuanjine"
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:layout_marginLeft="22px"
+        android:layout_marginRight="22px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_juxing_guquan"
+        android:orientation="vertical"
+        android:tag="(0,320){22,30,22,0}">
+
+
+       <!-- <LinearLayout
+            android:id="@+id/borrow_money_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:orientation="horizontal"
+            android:tag="(0,97)">
+
+
+            <TextView
+                android:layout_width="186px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(0,0,26){40,0,0,0}"
+                android:text="借款金额： "
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/et_01"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text=""
+                android:textColor="#585858"
+                android:textSize="26px" />
+            <Spinner
+                android:id="@+id/sp_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+        </LinearLayout>-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:orientation="horizontal"
+
+            android:tag="(0,97)">
+
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(150,0,26){40,0,0,0}"
+                android:text="借款金额 "
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+
+            <LinearLayout
+                android:id="@+id/borrow_money_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="性别"
+                android:textColor="#585858">
+
+                <TextView
+                    android:id="@+id/et_01"
+                    android:layout_width="0dp"
+                    android:layout_height="66px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="26px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:tag="(0,386,26)[10,0,26,0]"
+                    android:text=""
+                    android:textColor="#585858"
+                    android:textSize="26px" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40px"
+                    android:layout_marginRight="26px"
+                    android:background="#D2D2D2"
+                    android:tag="(1,40){0,0,26,0}" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="30px"
+                    android:layout_marginRight="26px"
+                    android:src="@mipmap/arrow_down_zichan"
+                    android:tag="(25,30){0,0,26,0}" />
+
+            </LinearLayout>
+
+          <!--  <Spinner
+                android:id="@+id/sp_01"
+                android:layout_width="wrap_content"
+
+
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />-->
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:orientation="horizontal"
+            android:tag="(0,97)">
+
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(150,0,26){40,0,0,0}"
+                android:text="借款用途： "
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+
+            <LinearLayout
+                android:id="@+id/borrow_money_use_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="性别"
+                android:textColor="#585858">
+
+                <TextView
+                    android:id="@+id/et_03"
+                    android:layout_width="0dp"
+                    android:layout_height="66px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="26px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:tag="(0,386,26)[10,0,26,0]"
+                    android:text=""
+                    android:textColor="#585858"
+                    android:textSize="26px" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40px"
+                    android:layout_marginRight="26px"
+                    android:background="#D2D2D2"
+                    android:tag="(1,40){0,0,26,0}" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="30px"
+                    android:layout_marginRight="26px"
+                    android:src="@mipmap/arrow_down_zichan"
+                    android:tag="(25,30){0,0,26,0}" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_01"
+                android:layout_width="wrap_content"
+
+
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:orientation="horizontal"
+            android:tag="(0,97)">
+
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:tag="(150,0,26){40,0,0,0}"
+                android:text="贷款期限： "
+                android:textColor="#585858"
+                android:textSize="26px" />
+
+
+            <!--<LinearLayout
+                android:layout_width="223px"
+                android:layout_height="51px"
+                android:orientation="vertical"
+                android:tag="{0,12,0,0}(223,51)"
+                tools:layout_marginTop="12px">
+
+                <TextView
+                    android:id="@+id/et_04"
+                    android:layout_width="223px"
+                    android:layout_height="51px"
+                    android:background="@drawable/selector_bg_main_04_edit"
+                    android:gravity="center"
+                    android:tag="[5,0,5,0](223,51,26)"
+                    tools:paddingLeft="5px"
+                    tools:paddingRight="5px"
+                    tools:textSize="26px" />
+
+                <Spinner
+                    android:id="@+id/sp_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>-->
+            <LinearLayout
+                android:id="@+id/qixian_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40px"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="(0,66,26)[10,0,0,0]"
+                android:text="性别"
+                android:textColor="#585858">
+
+                <TextView
+                    android:id="@+id/et_04"
+                    android:layout_width="0dp"
+                    android:layout_height="66px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="26px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:tag="(0,386,26)[10,0,26,0]"
+                    android:text=""
+                    android:textColor="#585858"
+                    android:textSize="26px" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40px"
+                    android:layout_marginRight="26px"
+                    android:background="#D2D2D2"
+                    android:tag="(1,40){0,0,26,0}" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="30px"
+                    android:layout_marginRight="26px"
+                    android:src="@mipmap/arrow_down_zichan"
+                    android:tag="(25,30){0,0,26,0}" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_02"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@mipmap/ic_main_fourthfragment_spinner_down"
+                android:tag="{12,17,0,0}(40,40)"
+                tools:layout_marginLeft="12px"
+                tools:layout_marginTop="17px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="{17,20,0,0}(0,0,22)"
+                android:text="@string/main_04_edit_041"
+                android:textColor="@color/colorBlack"
+                tools:layout_marginLeft="17px"
+                tools:layout_marginTop="20px"
+                tools:textSize="22px" />
+
+            <ImageView
+                android:id="@+id/iv_cb_01"
+                android:layout_width="49px"
+                android:layout_height="47px"
+                android:src="@drawable/selector_ic_main_04_checkbox"
+                android:tag="{12,14,0,0}(49,47)"
+                android:visibility="gone"
+                tools:layout_marginLeft="12px"
+                tools:layout_marginTop="14px" />
+
+            <Spinner
+                android:id="@+id/sp_02"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="97px"
+              android:orientation="horizontal"
+              android:visibility="gone"
+
+              android:tag="(0,97)">
+
+
+
+              <TextView
+                  android:layout_width="242px"
+                  android:layout_height="wrap_content"
+                  android:tag="{3,20,0,0}(242,0,26)"
+                  android:text="@string/main_04_edit_05"
+                  android:textColor="@color/colorBlack"
+                  tools:layout_marginLeft="3px"
+                  tools:layout_marginTop="20px"
+                  tools:textSize="26px" />
+
+
+              <LinearLayout
+                  android:layout_width="339px"
+                  android:layout_height="51px"
+                  android:tag="{0,12,0,0}(339,51)"
+                  tools:layout_marginTop="12px"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/et_05"
+                      android:layout_width="339px"
+                      android:layout_height="51px"
+                      android:background="@drawable/selector_bg_main_04_edit"
+                      android:gravity="center"
+                      android:maxLines="1"
+                      android:tag="[5,0,5,0](339,51,26)"
+                      tools:paddingLeft="5px"
+                      tools:paddingRight="5px"
+                      tools:textSize="26px" />
+
+                  <Spinner
+                      android:id="@+id/sp_03"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:background="@android:color/transparent" />
+              </LinearLayout>
+
+              <ImageView
+                  android:id="@+id/iv_03"
+                  android:layout_width="40px"
+                  android:layout_height="40px"
+                  android:layout_marginLeft="12px"
+                  android:layout_marginTop="17px"
+                  android:src="@mipmap/ic_main_fourthfragment_spinner_down"
+                  android:tag="{12,17,0,0}(40,40)" />
+          </LinearLayout>-->
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="97px"
+             android:orientation="horizontal"
+             android:visibility="gone"
+
+             android:tag="(0,97)">
+
+
+
+             <TextView
+                 android:layout_width="242px"
+                 android:layout_height="wrap_content"
+                 android:tag="{3,20,0,0}(242,0,26)"
+                 android:text="@string/main_04_edit_06"
+                 android:textColor="@color/colorBlack"
+                 tools:layout_marginLeft="3px"
+                 tools:layout_marginTop="20px"
+                 tools:textSize="26px" />
+
+             <LinearLayout
+                 android:layout_width="339px"
+                 android:layout_height="51px"
+                 android:tag="{0,12,0,0}(339,51)"
+                 tools:layout_marginTop="12px"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/et_06"
+                     android:layout_width="339px"
+                     android:layout_height="51px"
+                     android:background="@drawable/selector_bg_main_04_edit"
+                     android:gravity="center"
+                     android:maxLines="1"
+                     android:tag="[5,0,5,0](339,51,26)"
+                     tools:paddingLeft="5px"
+                     tools:paddingRight="5px"
+                     tools:textSize="26px" />
+
+                 <Spinner
+                     android:id="@+id/sp_04"
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:background="@android:color/transparent" />
+             </LinearLayout>
+
+             <ImageView
+                 android:id="@+id/iv_04"
+                 android:layout_width="40px"
+                 android:layout_height="40px"
+                 android:layout_marginLeft="12px"
+                 android:layout_marginTop="17px"
+                 android:src="@mipmap/ic_main_fourthfragment_spinner_down"
+                 android:tag="{12,17,0,0}(40,40)" />
+         </LinearLayout>-->
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="97px"
+             android:orientation="horizontal"
+             android:visibility="gone"
+             android:tag="(0,97)">
+
+
+
+             <TextView
+                 android:layout_width="242px"
+                 android:layout_height="wrap_content"
+                 android:tag="{3,20,0,0}(242,0,26)"
+                 android:text="@string/main_04_edit_07"
+                 android:textColor="@color/colorBlack"
+                 tools:layout_marginLeft="3px"
+                 tools:layout_marginTop="20px"
+                 tools:textSize="26px" />
+
+             <LinearLayout
+                 android:layout_width="339px"
+                 android:layout_height="51px"
+                 android:tag="{0,12,0,0}(339,51)"
+                 tools:layout_marginTop="12px"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/et_07"
+                     android:layout_width="339px"
+                     android:layout_height="51px"
+                     android:background="@drawable/selector_bg_main_04_edit"
+                     android:gravity="center"
+                     android:maxLines="1"
+                     android:tag="[5,0,5,0](339,51,26)"
+                     tools:paddingLeft="5px"
+                     tools:paddingRight="5px"
+                     tools:textSize="26px" />
+
+                 <Spinner
+                     android:id="@+id/sp_05"
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:background="@android:color/transparent" />
+             </LinearLayout>
+
+             <ImageView
+                 android:id="@+id/iv_05"
+                 android:layout_width="40px"
+                 android:layout_height="40px"
+                 android:layout_marginLeft="12px"
+                 android:layout_marginTop="17px"
+                 android:src="@mipmap/ic_main_fourthfragment_spinner_down"
+                 android:tag="{12,17,0,0}(40,40)" />
+         </LinearLayout>-->
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="97px"
+              android:orientation="horizontal"
+              android:visibility="gone"
+
+              android:tag="(0,97)">
+
+
+
+              <TextView
+                  android:layout_width="242px"
+                  android:layout_height="wrap_content"
+                  android:tag="{3,20,0,0}(242,0,26)"
+                  android:text="@string/main_04_edit_08"
+                  android:textColor="@color/colorBlack"
+                  tools:layout_marginLeft="3px"
+                  tools:layout_marginTop="20px"
+                  tools:textSize="26px" />
+
+              <LinearLayout
+                  android:layout_width="339px"
+                  android:layout_height="51px"
+                  android:tag="{0,12,0,0}(339,51)"
+                  tools:layout_marginTop="12px"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/et_08"
+                      android:layout_width="339px"
+                      android:layout_height="51px"
+                      android:background="@drawable/selector_bg_main_04_edit"
+                      android:gravity="center"
+                      android:maxLines="1"
+                      android:tag="[5,0,5,0](339,51,26)"
+                      tools:paddingLeft="5px"
+                      tools:paddingRight="5px"
+                      tools:textSize="26px" />
+
+                  <Spinner
+                      android:id="@+id/sp_06"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:background="@android:color/transparent" />
+              </LinearLayout>
+
+              <ImageView
+                  android:id="@+id/iv_06"
+                  android:layout_width="40px"
+                  android:layout_height="40px"
+                  android:layout_marginLeft="12px"
+                  android:layout_marginTop="17px"
+                  android:src="@mipmap/ic_main_fourthfragment_spinner_down"
+                  android:tag="{12,17,0,0}(40,40)" />
+          </LinearLayout>-->
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:tag="(0,97)">
+
+
+
+            <TextView
+                android:layout_width="242px"
+                android:layout_height="wrap_content"
+                android:tag="{3,20,0,0}(242,0,26)"
+                android:text="借款类型"
+                android:textColor="@color/colorBlack"
+                tools:layout_marginLeft="3px"
+                tools:layout_marginTop="20px"
+                tools:textSize="26px" />
+
+            <LinearLayout
+                android:layout_width="339px"
+                android:layout_height="51px"
+                android:tag="{0,12,0,0}(339,51)"
+                tools:layout_marginTop="12px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/et_10"
+                    android:layout_width="339px"
+                    android:layout_height="51px"
+                    android:background="@drawable/selector_bg_main_04_edit"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:tag="[5,0,5,0](339,51,26)"
+                    tools:paddingLeft="5px"
+                    tools:paddingRight="5px"
+                    tools:textSize="26px" />
+
+                <Spinner
+                    android:id="@+id/sp_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_08"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_marginLeft="12px"
+                android:layout_marginTop="17px"
+                android:src="@mipmap/ic_main_fourthfragment_spinner_down"
+                android:tag="{12,17,0,0}(40,40)" />
+        </LinearLayout>-->
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="97px"
+              android:orientation="horizontal"
+              android:visibility="gone"
+
+              android:tag="(0,97)">
+
+
+
+              <TextView
+                  android:layout_width="242px"
+                  android:layout_height="wrap_content"
+                  android:tag="{3,19,0,0}(242,0,26)"
+                  android:text="@string/main_04_cb_01"
+                  android:textColor="@color/colorBlack"
+                  tools:layout_marginLeft="3px"
+                  tools:layout_marginTop="19px"
+                  tools:textSize="26px" />
+
+              <LinearLayout
+                  android:layout_width="287px"
+                  android:layout_height="51px"
+                  android:tag="{0,12,0,0}(287,51)"
+                  tools:layout_marginTop="12px"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/et_09"
+                      android:layout_width="287px"
+                      android:layout_height="51px"
+                      android:background="@drawable/selector_bg_main_04_edit"
+                      android:gravity="center"
+                      android:maxLines="1"
+                      android:tag="[5,0,5,0](287,51,26)"
+                      tools:paddingLeft="5px"
+                      tools:paddingRight="5px"
+                      tools:textSize="26px" />
+
+                  <Spinner
+                      android:id="@+id/sp_07"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:background="@android:color/transparent" />
+              </LinearLayout>
+
+              <ImageView
+                  android:id="@+id/iv_07"
+                  android:layout_width="40px"
+                  android:layout_height="40px"
+                  android:layout_marginLeft="12px"
+                  android:layout_marginTop="17px"
+                  android:src="@mipmap/ic_main_fourthfragment_spinner_down"
+                  android:tag="{12,17,0,0}(40,40)" />
+              <ImageView
+                  android:id="@+id/iv_cb_02"
+                  android:layout_width="49px"
+                  android:layout_height="47px"
+                  android:src="@drawable/selector_ic_main_04_checkbox"
+                  android:tag="{8,15,0,0}(49,47)"
+                  tools:layout_marginLeft="8px"
+                  tools:layout_marginTop="15px" />
+          </LinearLayout>-->
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@drawable/shape_bg_login_bt"
+        android:tag="(0,90,26){25,64,25,0}"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_marginTop="64px"
+        android:text="@string/main_04_bt_01"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"              >#3F51B5</color>
+    <color name="colorPrimaryDark"          >#303F9F</color>
+    <color name="colorAccent"               >#FF4081</color>
+    <color name="colorMainBlue"             >#41B0E8</color><!--主色调-->
+    <color name="colorMainPressBlue"        >#0b52af</color><!--主色调-->
+    <color name="colorTextGrey"             >#969696</color><!--主页底部tab栏未选中状态字体颜色-->
+    <color name="colorBannerdividingline1"  >#95C2FE</color><!--banner图下方分界线颜色1-->
+    <color name="colorBannerdividingline2"  >#B3D3FD</color><!--banner图下方分界线颜色2-->
+    <color name="colorGreydividingline"     >#E6E6E6</color><!--灰（分界线颜色）-->
+    <color name="colorGreydividingline2"    >#D2D2D2</color><!--AM灰（分界线颜色）-->
+    <color name="colorPink"                 >#FD497F</color><!--粉红-->
+    <color name="colorForgotPink"           >#FD4A7F</color><!--忘记密码粉红-->
+    <color name="colorDeepGrey"             >#9B9B9D</color><!--深灰（阴影）-->
+    <color name="colorBlack"                >#898989</color><!--黑色（同字体颜色）-->
+    <color name="colorLightBlack"           >#4D4D4D</color><!--浅黑色（同字体颜色）-->
+    <color name="colorWhite"                >#FFFFFF</color><!--白色（同字体颜色）-->
+    <color name="colorHint1"                >#B3B3B3</color><!--灰色（同hint字体颜色）-->
+    <color name="colorTextDarkGrey"         >#757575</color><!--更深灰（FirstFragment字体颜色）-->
+    <color name="colorFirstTextDarkGrey"    >#666666</color><!--更深灰（FirstFragment字体颜色）-->
+    <color name="colorTablightWhite"        >#F2F2F2</color><!--更深灰（tab颜色）-->
+    <color name="colorItemTextGrey1"        >#8C8C8C</color><!--更深灰1（listitem字体颜色1）-->
+    <color name="colorItemTextGrey2"        >#595959</color><!--更深灰2（listitem字体颜色2）-->
+    <color name="colorItemDividGrey"        >#D6D6D6</color><!--更深灰3（listitem分界线颜色）-->
+    <color name="colorThirdBgGrey"          >#EBEBEB</color><!--更深灰4（listitem分界线颜色）-->
+    <color name="colorTextHint"             >#d2d2d2</color><!--更深灰5（listitem分界线颜色）-->
+    <color name="colorGridgrey"             >#BFBFBF</color><!--更深灰5（griditem分界线颜色）-->
+    <color name="colorGridtextgrey"         >#606060</color><!--更深灰5（gridtext分界线颜色）-->
+    <color name="colorSelectgrey"           >#A6A6A6</color><!--更深灰5（gridtext分界线颜色）-->
+    <color name="colorSelectgrey2"          >#CECECE</color><!--更深灰5（gridtext分界线颜色）-->
+    <color name="colorDeviline"             >#C3C3C3</color><!--更深灰5（gridtext分界线颜色）-->
+    <color name="colorDialog"               >#EDEDED</color><!--更深灰5（gridtext分界线颜色）-->\
+
+    <color name="colorLakeBlue"             >#4ecbf8</color>
+    <color name="colorTitleBlue"            >#41b0e8</color>
+    <color name="colorYellow"               >#ff8800</color>
+    <color name="split_line_color"          >#d1d1d1</color>
+    <color name="navigation_grey"           >#f6f6f6</color>
+
+    <color name="colorHomeTitle"            >#221815</color>
+    <color name="colorBg"                   >#f6f6f6</color>
+    <color name="colorHomeTextGrey"         >#a4a4a4</color>
+    <color name="colorHomeTextBlack"        >#353535</color>
+    <color name="transparent"               >#00000000</color>
+    <color name="divider"                   >#e2e2e2</color>
+    <color name="greyText"                  >#999999</color>
+    <color name="colorYellowInvest"         >#fd9809</color>
+
+    <color name="touzilicai_color"         >#3BA0D3</color>
+    <color name="zhaiquanguanli"         >#666666</color>
+</resources>

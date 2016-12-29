@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.InvestmentManagementActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/im_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+
+        android:orientation="horizontal"
+        android:tag="(0,75)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,26)"
+            android:text="@string/im_01"
+            android:textColor="#353535" />
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,26)"
+            android:text="@string/im_02"
+            android:textColor="#353535" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,75)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="@string/im_03"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="0.00元"
+            android:textColor="#555555" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:tag="(20,0,20,0)"
+        />
+    <LinearLayout
+        android:id="@+id/ll_02"
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+
+        android:orientation="horizontal"
+        android:tag="(0,75)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="@string/im_04"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="0.00元"
+            android:textColor="#555555" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:tag="(20,0,20,0)"
+        />
+    <LinearLayout
+        android:id="@+id/ll_03"
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,75)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="已回收的投资"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="0.00元"
+            android:textColor="#555555" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:tag="(20,0,20,0)"
+        />
+    <LinearLayout
+        android:id="@+id/ll_04"
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+
+        android:orientation="horizontal"
+        android:tag="(0,75)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="@string/im_06"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/tv_05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="0.00元"
+            android:textColor="#555555" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:tag="(20,0,20,0)"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,75)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="@string/im_07"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/tv_06"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,0,28)"
+            android:text="0.00元"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+</LinearLayout>

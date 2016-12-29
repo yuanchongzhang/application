@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.VipApplyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/va_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:layout_marginTop="23px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="{0,23,0,0}(0,75)">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="26px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:src="@mipmap/ic_applyvip_blue"
+            android:tag="{25,0,0,0}(0,26)"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:tag="{16,0,0,0}(0,0,26)"
+            android:text="@string/va_01"
+            android:textColor="#666666"
+            tools:layout_marginLeft="16px"
+            tools:textSize="16sp" />
+    </LinearLayout>
+    <!--
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+
+            android:tag="(0,321){0,26,0,0}"
+
+            >
+
+            <EditText
+                android:id="@+id/et_01"
+                android:layout_width="match_parent"
+                android:layout_height="255px"
+                android:background="@drawable/shape_bg_login_bt"
+                android:gravity="top"
+                android:hint="@string/va_01"
+                android:tag="{30,0,24,0}[10,10,10,10](0,255,22)"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorTextHint"
+                tools:layout_marginLeft="30px"
+                tools:layout_marginRight="24px"
+                tools:layout_marginTop="0px"
+                tools:paddingBottom="10px"
+                tools:paddingLeft="10px"
+                tools:paddingRight="10px"
+                tools:paddingTop="10px"
+                tools:textSize="22px" />
+
+        </LinearLayout>-->
+    <EditText
+        android:id="@+id/et_01"
+        android:layout_width="match_parent"
+        android:layout_height="255px"
+        android:background="@null"
+        android:gravity="top"
+        android:tag="{24,0,24,0}[10,10,10,10](0,281,22)"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorTextHint"
+        tools:layout_marginLeft="30px"
+        tools:layout_marginRight="24px"
+        tools:layout_marginTop="0px"
+        tools:paddingBottom="10px"
+        tools:paddingLeft="10px"
+        tools:paddingRight="10px"
+        tools:paddingTop="10px"
+        tools:textSize="22px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E2E2"
+        android:tag="(0,40,0,0)"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="{0,31,0,0}(0,75)">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="26px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:src="@mipmap/ic_applyvip_pink"
+            android:tag="{25,0,0,0}(0,26)"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:tag="{16,0,0,0}(0,0,26)"
+            android:text="@string/va_03"
+            android:textColor="#B7B7B7"
+            tools:layout_marginLeft="16px"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+
+        android:clipToPadding="false"
+        android:tag="{25,0,25,0}(0,238)"
+        tools:listitem="@layout/list_01_item_view"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        >
+
+
+        <Button
+            android:id="@+id/bt_01"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="#41B0E8"
+            android:tag="(0,80,26){25,228,25,142}"
+            android:text="@string/va_02"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

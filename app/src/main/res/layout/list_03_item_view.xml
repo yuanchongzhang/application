@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haiying.p2papp.view.SlidingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="146px"
+        android:tag="(0,146)">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="146px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/layout_content"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:tag="(146,0)"
+            android:text="删除"
+            android:textColor="#DDFFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="720px"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="(720,0)">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_logo"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="25px"
+                android:src="@mipmap/logo_boc"
+                android:tag="{25,0,0,0}(90,90)"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_weight="1"
+                    android:tag="{40,0,0,0}(0,0,26)"
+                    android:text="银行名称"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:tag="{40,34,20,0}(0,0,26)"
+                    android:text="6000 3000 1254 2541"
+                    android:layout_marginTop="34px"
+                    android:textColor="#A4A4A4"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</com.haiying.p2papp.view.SlidingButtonView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haiying.p2papp.activity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:name="com.haiying.p2papp.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name="com.haiying.p2papp.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.TestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.AccountManagementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.PersonalSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.NewsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.InvestmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ManageFinancesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.TiroAndExperienceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.IoanActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.AmountApplyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ApplyRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.PasswordManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.PasswordModifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.PasswordTransactionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.BankcardManagementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.BankcardAddActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ChoseBankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.SafetyCertificateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.VerifiedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ChangePhoneNumbersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ChangePhoneNumbersNextActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.VipApplyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.InviteFriendsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.BonusRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.PromotionDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.LettersOfStationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.WithdrawOrRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.WithdrawOrRechargeRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.InvestmentManagementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.PayActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ClaimsManagementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.MoneyManagementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.MyAssetsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.MyAssetsHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.MyRedpacketActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.IncreasedInterestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ShopActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.FinancialActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.AdvertisingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.MsgListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.MsgDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.InvestManageDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.ChangeNickNameActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.haiying.p2papp.activity.WelcomeActivity"
+            android:theme="@style/Theme.Start"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.haiying.p2papp.activity.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.CredittransferDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.haiying.p2papp.activity.BondCancelActivity" android:screenOrientation="portrait"/>
+    </application>
+
+
+</manifest>

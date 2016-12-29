@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="(0,135)">
+
+        <ImageView
+            android:id="@+id/img_home_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:tag="(80,80)" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:tag="{100,0,0,0}">
+
+            <TextView
+                android:id="@+id/tv_home_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(30)"
+                android:textColor="@color/colorHomeTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_home_list_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(26){0,15,0,0}"
+                android:textColor="@color/colorHomeTextGrey" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/right_arrow"
+            android:tag="(20,34){0,0,25,0}" />
+
+    </RelativeLayout>
+
+</LinearLayout>

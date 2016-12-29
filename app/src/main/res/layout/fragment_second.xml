@@ -1,0 +1,311 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context="com.haiying.p2papp.fragment.SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/main_02_title_01"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:tag="(0,60){0,20,0,0}">
+
+        <LinearLayout
+            android:id="@+id/ll_tab_left"
+            android:layout_width="190px"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_color_main_01_tab_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--       <ImageView
+                       android:layout_width="79px"
+                       android:layout_height="77px"
+                       android:src="@mipmap/ic_main_secondfragment_tab_01"
+                       android:tag="{45,25,0,0}(79,77)"
+                       tools:layout_marginLeft="45px"
+                       tools:layout_marginTop="25px" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:tag="{24,42,0,0}(0,0,32)"
+                       android:text="@string/main_02_tab_01"
+                       android:textColor="@color/colorLightBlack"
+                       android:textStyle="bold"
+                       tools:layout_marginLeft="24px"
+                       tools:layout_marginTop="42px"
+                       tools:textSize="32px" />-->
+            <TextView
+                android:id="@+id/tv_invest_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:tag="(27)"
+                android:text="@string/main_02_tab_01"
+
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_right"
+            android:layout_width="190px"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_color_main_02_tab_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--   <ImageView
+                   android:layout_width="84px"
+                   android:layout_height="83px"
+                   android:src="@mipmap/ic_main_secondfragment_tab_02"
+                   android:tag="{42,23,0,0}(84,83)"
+                   tools:layout_marginLeft="42px"
+                   tools:layout_marginTop="23px" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:tag="{24,42,0,0}(0,0,32)"
+                   android:text="@string/main_02_tab_02"
+                   android:textColor="@color/colorLightBlack"
+                   android:textStyle="bold"
+                   tools:layout_marginLeft="24px"
+                   tools:layout_marginTop="42px"
+                   tools:textSize="32px" />-->
+            <TextView
+                android:id="@+id/tv_regular_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="(27)"
+                android:text="@string/main_02_tab_02"
+                android:textColor="@color/touzilicai_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_juxing"
+        android:orientation="horizontal"
+        android:tag="(0,69){0,20,0,0}">
+
+        <LinearLayout
+            android:id="@+id/ll_sp_1"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:tag="(0,70)">
+
+            <TextView
+                android:id="@+id/tv_sp_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(27)"
+                android:text="@string/main_02_chose_01"
+                android:textColor="@color/greyText" />
+
+            <ImageView
+                android:id="@+id/iv_sp_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_action_downarrow_blue"
+                android:tag="(18,12){10,0,0,0}" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_sp_2"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,70)">
+
+            <TextView
+                android:id="@+id/tv_sp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(27)"
+                android:text="@string/main_02_chose_02"
+                android:textColor="@color/greyText" />
+
+            <ImageView
+                android:id="@+id/iv_sp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_action_downarrow_blue"
+                android:tag="(18,12){10,0,0,0}" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_sp_3"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,70)">
+
+            <TextView
+                android:id="@+id/tv_sp_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(27)"
+                android:text="@string/main_02_chose_03"
+                android:textColor="@color/greyText" />
+
+            <ImageView
+                android:id="@+id/iv_sp_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_action_downarrow_blue"
+                android:tag="(18,12){10,0,0,0}" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+        <LinearLayout
+            android:id="@+id/ll_sp_4"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="(0,70)">
+
+            <TextView
+                android:id="@+id/tv_sp_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(27)"
+                android:text="@string/main_02_chose_04"
+                android:textColor="@color/greyText" />
+
+            <ImageView
+                android:id="@+id/iv_sp_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_action_downarrow_blue"
+                android:tag="(18,12){10,0,0,0}" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_01"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/sp_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/sp_03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/sp_04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/store_house_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+       <!-- -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9px"
+            android:layout_marginRight="9px"
+            android:layout_marginTop="22px"
+            android:background="@color/colorWhite"
+            android:clipToPadding="false"
+            android:tag="[0,0,0,0]{9,22,9,0}(0,0)"
+            android:visibility="visible"
+            tools:layout_marginTop="20px"
+            tools:listitem="@layout/list_01_item_view"></android.support.v7.widget.RecyclerView>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

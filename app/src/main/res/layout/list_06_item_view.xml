@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_juxing_investuse"
+    android:orientation="vertical"
+    android:tag="(0,0)">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:tag="(0,70)">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21px"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:tag="{23,0,0,0}(0,0,28)"
+            android:text="标题：创业使用"
+            android:textColor="#41B0E8"
+
+            android:textStyle="bold"
+            tools:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:tag="{0,0,2,0}(0,0,27)"
+            android:text="投资时间：2015-01-12 17:35"
+            android:textColor="#666666"
+            tools:textSize="27px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:tag="(0,70)">
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:tag="{21,0,0,0}(0,0,27)"
+            android:text="借款者：赵日天"
+            android:textColor="#666666"
+            tools:layout_marginLeft="21px" />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:tag="{0,0,0,0}(0,0,27)"
+            android:text="投资时间：2015-01-12 17:35"
+            android:textColor="#666666"
+            tools:textSize="27px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="181px"
+              android:orientation="horizontal"
+              android:tag="(0,181)">
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:gravity="center_vertical"
+                  android:orientation="vertical"
+                  android:tag="(0,0)">
+
+                 &lt;!&ndash; <TextView
+                      android:id="@+id/tv_01"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="21px"
+                      android:maxLines="1"
+                      android:tag="{23,28,0,0}(0,0,28)"
+                      android:text="标题：创业使用"
+                      android:textColor="#41B0E8"
+                      android:textStyle="bold"
+                      tools:layout_marginTop="28px"
+
+                      tools:textSize="28px" />&ndash;&gt;
+
+               &lt;!&ndash;   <TextView
+                      android:id="@+id/tv_02"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:tag="{21,25,0,0}(0,0,27)"
+                      android:text="借款者：赵日天"
+                      android:textColor="#666666"
+                      tools:layout_marginLeft="21px"
+
+                      tools:layout_marginTop="25px" />&ndash;&gt;
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="47px"
+                      android:layout_marginLeft="25px"
+                      android:layout_marginTop="23px"
+                      android:orientation="horizontal"
+                      android:tag="{25,23,0,0}(150,47,22)">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="center_vertical"
+                          android:gravity="center_vertical"
+                          android:tag="(0,0,23)"
+                          android:text="操作:   "
+                          android:textSize="23px" />
+
+                      <Button
+                          android:id="@+id/bt_01"
+                          android:layout_width="match_parent"
+                          android:layout_height="41px"
+
+                          android:layout_gravity="center_vertical"
+                          android:background="@drawable/selector_bg_zhaiquan"
+                          android:tag="{0,0,0,0}(200,40,28)[10,0,10,0]"
+                          android:paddingLeft="10px"
+                          android:paddingRight="10px"
+                          android:text="转让"
+                          android:textColor="@color/colorWhite"
+                          android:textSize="28px" />
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="26px"
+
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:visibility="gone"
+                  android:tag="{0,28,26,0}(0,0)">
+
+              &lt;!&ndash;    <TextView
+                      android:id="@+id/tv_03"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:tag="{0,28,2,0}(0,0,27)"
+                      android:text="投资时间：2015-01-12 17:35"
+                      android:textColor="#666666"
+                      android:layout_marginTop="28px"
+                      tools:textSize="27px" />&ndash;&gt;
+
+           &lt;!&ndash;       <TextView
+                      android:id="@+id/tv_04"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:tag="{0,28,0,0}(0,0,27)"
+                      android:text="投资时间：2015-01-12 17:35"
+                      android:textColor="#666666"
+                      tools:layout_marginTop="28px"
+                      tools:textSize="27px" />&ndash;&gt;
+
+              </LinearLayout>
+
+
+          </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:orientation="horizontal"
+            android:tag="(0,0){0,25,0,0}">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="21px"
+                android:gravity="center_vertical"
+                android:tag="(0,0,23){21,0,0,0}"
+                android:text="操作:   "
+                android:textSize="23px" />
+
+            <Button
+                android:id="@+id/bt_01"
+                android:layout_width="150px"
+                android:layout_height="40px"
+
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_bg_zhaiquan"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:tag="{0,0,0,0}(0,40,28)[10,0,10,0]"
+                android:text="转让"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+        </LinearLayout>
+
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="50px"
+               android:tag="(0,50)"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_vertical"
+                   android:gravity="center_vertical"
+                   android:tag="(0,0,23){21,0,0,0}"
+                   android:text="操作:   "
+                   android:layout_marginLeft="21px"
+                   tools:layout_marginLeft="21px"
+                   android:textSize="23px" />
+
+
+           </LinearLayout>-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="30px"
+            android:background="#E2E2E2"
+            android:tag="(0,30,0,0)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="164px"
+
+
+            android:orientation="horizontal"
+            android:tag="{0,0,0,0}(0,164)">
+
+            <LinearLayout
+                android:layout_width="203px"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="(203,0)">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:orientation="horizontal"
+                    android:tag="(0,0){0,20,0,0}">
+
+                    <TextView
+                        android:id="@+id/tv_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:tag="{0,0,0,0}(0,0,34)"
+                        android:text="10"
+                        android:textColor="#41B0E8"
+                        android:textStyle="bold"
+                        tools:textSize="34px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:tag="(0,0,24)"
+                        android:text="期"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/tv_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:tag="{0,0,0,0}(0,0,34)"
+                        android:text="/10"
+                        android:textColor="#41B0E8"
+                        android:textStyle="bold"
+                        tools:textSize="34px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:tag="(0,0,24)"
+                        android:text="期"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+
+                <!--  android:text="10期/10期"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="33px"
+                    android:layout_marginTop="26px"
+                    android:tag="(0,0,24){0,26,0,33}"
+                    android:text="未还期数/总期数"
+                    android:textColor="#A4A4A4"
+                    tools:textSize="24px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/colorItemDividGrey"
+                android:tag="{0,39,0,27}(2,0)"
+                android:visibility="gone"
+                tools:layout_marginBottom="27px"
+                tools:layout_marginTop="39px" />
+
+            <LinearLayout
+                android:layout_width="330px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="(330,0)">
+
+             <!--   <TextView
+                    android:id="@+id/tv_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:tag="{0,20,0,0}(0,0,34)"
+                    android:text="10"
+                    android:textColor="#FD9809"
+                    android:textStyle="bold"
+                    tools:textSize="34px" />-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:orientation="horizontal"
+                    android:tag="(0,0){0,20,0,0}">
+
+                    <TextView
+                        android:id="@+id/tv_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:tag="{0,0,0,0}(0,0,34)"
+                        android:text="10"
+                        android:textColor="#FD9809"
+                        android:textStyle="bold"
+                        tools:textSize="34px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:tag="(0,0,24)"
+                        android:text="期"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/tv_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:tag="{0,0,0,0}(0,0,34)"
+                        android:text="/10"
+                        android:textColor="#FD9809"
+                        android:textStyle="bold"
+                        tools:textSize="34px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:tag="(0,0,24)"
+                        android:text="期"
+                        android:textSize="24px" />
+                </LinearLayout>
+                <!-- 3999.99元/233.30元-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="20px"
+                    android:layout_marginTop="26px"
+                    android:tag="(0,0,24){0,26,0,33}"
+                    android:text="待收本金/待收利息"
+                    android:textColor="#A4A4A4"
+                    tools:textSize="22px" />
+
+
+            </LinearLayout>
+
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:baselineAligned="true"
+                  android:orientation="vertical"
+                  android:tag="(0,0)">
+
+                  <TextView
+                      android:id="@+id/tv_07"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="20px"
+                      android:tag="(0,0,30){0,20,0,0}"
+                      android:text="12"
+
+                      android:textColor="#41B0E8"
+                      android:textStyle="bold"
+                      tools:textSize="30px" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:layout_marginBottom="20px"
+
+                      android:layout_marginTop="26px"
+                      android:tag="(0,0,26){0,20,0,26}"
+                      android:text="利率"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="#BFBFBF"
+                      tools:textSize="26px" />
+              </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:tag="(0,0)">
+
+                <TextView
+                    android:id="@+id/tv_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:tag="{0,25,0,0}(0,0,30)"
+                    android:text="12"
+                    android:textColor="#41B0E8"
+                    android:textStyle="bold"
+                    tools:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="20px"
+                    android:layout_marginTop="26px"
+                    android:tag="(0,0,24){0,26,0,33}"
+                    android:text="利率"
+                    android:textColor="#A4A4A4"
+                    tools:textSize="22px" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

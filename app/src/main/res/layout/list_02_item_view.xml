@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78px"
+    android:background="@color/colorWhite"
+    android:tag="(0,78)">
+  <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        android:orientation="horizontal"
+        android:tag="(0,78)">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="147px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(147,0,26)"
+            android:text="@string/ar_01"
+            android:textColor="#999999"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="147px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(147,0,26)"
+            android:text="@string/ar_02"
+            android:textColor="#999999"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="147px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(147,0,26)"
+            android:text="@string/ar_03"
+            android:textColor="#999999"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="147px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(147,0,26)"
+            android:text="@string/ar_04"
+            android:textColor="#999999"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_05"
+            android:layout_width="147px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(147,0,26)"
+            android:text="@string/ar_05"
+            android:textColor="#999999"
+            android:textSize="26px"/>
+
+    </LinearLayout>
+</LinearLayout>

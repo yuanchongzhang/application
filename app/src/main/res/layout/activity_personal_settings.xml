@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PersonalSettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorLakeBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/accountmanage_01"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="(0,138)">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="(0,0,29){25,0,0,0}"
+            android:text="@string/ps_01"
+            android:textColor="#585858" />
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_head"-->
+        <!--android:tag="(99,99){0,0,25,0}">-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_head"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@mipmap/ic_main_fifthfragment_camera"-->
+        <!--android:tag="{0,0,0,0}(99,99)"-->
+        <!--android:visibility="gone" />-->
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="{0,0,0,0}(99,99)"
+            fresco:placeholderImage="@mipmap/mrtx"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="180dp" />
+        <!-- fresco:placeholderImage="@mipmap/mrtx"-->
+        <!--</FrameLayout>-->
+
+        <ImageView
+            android:id="@+id/iv_personalsettings_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(24,34)" />
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_head"-->
+        <!--android:tag="{26,0,0,0}(116,117)">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_head"-->
+        <!--android:layout_width="116px"-->
+        <!--android:layout_height="117px"-->
+        <!--android:visibility="gone"-->
+        <!--android:src="@mipmap/ic_main_fifthfragment_camera"-->
+        <!--android:tag="{0,0,0,0}(116,117)"-->
+        <!--android:background="@drawable/shape_head"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/iv_camera"-->
+        <!--android:layout_width="116px"-->
+        <!--android:layout_height="117px"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:tag="{0,0,0,0}(116,117)"-->
+        <!--fresco:placeholderImage="@mipmap/ic_main_fifthfragment_camera"-->
+        <!--fresco:roundedCornerRadius="8dp" />-->
+
+
+        <!--</FrameLayout>-->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="(0,90)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="@string/ps_02"
+            android:textColor="#585858" />
+
+        <TextView
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:hint="@string/ps_02_hint"
+            android:tag="{0,0,25,0}(0,0,29)"
+            android:textColor="#585858"
+            android:textColorHint="@color/colorTextHint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+    <LinearLayout
+        android:id="@+id/nickname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="(0,90)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="昵称"
+            android:textColor="#585858" />
+
+        <TextView
+            android:id="@+id/et_nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:tag="{0,0,25,0}(0,0,29)"
+            android:text="昵称"
+            android:textColor="#585858"
+            android:textColorHint="@color/colorTextHint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+
+    <Button
+        android:id="@+id/bt_ps_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@drawable/selector_bg_main_04_bt"
+        android:tag="(0,80,26)"
+        android:text="@string/register_06"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone" />
+
+</LinearLayout>

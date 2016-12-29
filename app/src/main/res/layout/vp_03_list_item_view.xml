@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="(0,0)">
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="68px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,68)">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="80px"
+
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(80,0,23)"
+            android:text="@string/invest_vp_01"
+            android:textColor="@color/colorBlack"
+            android:textSize="23px" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:tag="(0,0,23)"
+            android:text="@string/invest_vp_02"
+            android:textColor="@color/colorBlack"
+            android:textSize="23px" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+
+            android:gravity="center"
+            android:tag="(0,0,23){0,0,0,0}"
+            android:text="投标金额"
+            android:textColor="@color/colorBlack"
+            android:textSize="23px" />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="120px"
+
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:tag="(120,0,23){0,0,0,0}"
+            android:text="投标利息"
+            android:textColor="@color/colorBlack"
+            android:textSize="23px" />
+
+        <TextView
+            android:id="@+id/tv_05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:tag="(0,0,23)"
+            android:text="投标类型"
+            android:textColor="@color/colorBlack"
+            android:textSize="23px" />
+
+        <TextView
+            android:id="@+id/tv_06"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:tag="(0,0,23)"
+            android:text="投标时间"
+            android:textColor="@color/colorBlack"
+            android:textSize="23px" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="(0,0)"
+        tools:listitem="@layout/list_14_item_view"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

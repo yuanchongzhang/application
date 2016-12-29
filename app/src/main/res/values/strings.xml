@@ -1,0 +1,364 @@
+<resources>
+    <string name="app_name">余钱宝</string>
+    <!--MainActivity底部按钮-->
+    <string name="main_tab_first">首页</string>
+    <string name="main_tab_two">投资理财</string>
+    <string name="main_tab_three">债权转让</string>
+    <string name="main_tab_four">我要借款</string>
+    <string name="main_tab_five">我的账户</string>
+    <!--FirstFragment-->
+    <string name="main_01_title_01">余钱宝</string>
+    <string name="main_01_01_01">推荐出借项目</string>
+    <string name="main_01_01_02">自由选择,自由投资,稳健收益</string>
+    <string name="main_01_02_01">优选计划</string>
+    <string name="main_01_02_02">系统为您实现项目分散投标</string>
+    <string name="main_01_03_01">8万元体验金</string>
+    <string name="main_01_03_02">海赢体验专项</string>
+    <string name="main_01_04_01">新手专项标</string>
+    <string name="main_01_04_02">限未成功投资过的新用户</string>
+    <string name="main_01_05_01">转让项目</string>
+
+    <string name="main_01_05_02">更短的期限，更高的收益,项目随时更新</string>
+    <string name="main_01_06_01">众筹系统</string>
+    <string name="main_01_05_03"></string>
+    <!--SecondFragment-->
+    <string name="main_02_title_01">投资理财</string>
+    <string name="main_02_tab_01">投资列表</string>
+    <string name="main_02_tab_02">定期理财</string>
+    <string name="main_02_chose_01">类型</string>
+    <string name="main_02_chose_02">收益</string>
+    <string name="main_02_chose_03">期限</string>
+    <string name="main_02_chose_04">状态</string>
+    <!--ThirdFragment-->
+    <string name="main_03_title_01">债权转让</string>
+    <!--FourthFragment-->
+    <string name="main_04_title_01">我要借款</string>
+    <string name="main_04_title_02">借款信息</string>
+    <string name="main_04_edit_01">借款总金额</string>
+    <string name="main_04_edit_02">年利率</string>
+    <string name="main_04_edit_02_hint"></string>
+    <string name="main_04_edit_03">借款用途</string>
+    <string name="main_04_edit_04">贷款期限</string>
+    <string name="main_04_edit_041">按天</string>
+    <string name="main_04_edit_05">最低投标金额</string>
+    <string name="main_04_edit_06">最高投标金额</string>
+    <string name="main_04_edit_07">有效时间</string>
+    <string name="main_04_edit_08">还款方式</string>
+    <string name="main_04_cb_01">是否有投标奖励</string>
+    <string name="main_04_bt_01">下一步</string>
+    <!--FifthFragment-->
+    <string name="main_05_title_01">我的账户</string>
+    <string name="main_05_bt_01">请点击登录</string>
+    <string name="main_05_money_01">总资产</string>
+    <string name="main_05_money_02">元</string>
+    <string name="main_05_tab_left">充值</string>
+    <string name="main_05_tab_right">提现</string>
+    <string name="main_05_item_01">投资管理</string>
+    <string name="main_05_item_02">债权管理</string>
+    <string name="main_05_item_03">理财管理</string>
+    <string name="main_05_item_04">我的资产</string>
+    <string name="main_05_item_05">余钱宝商城</string>
+    <string name="main_05_item_06">金融服务</string>
+    <string name="main_05_item_07">我的红包</string>
+    <string name="main_05_item_08">加息券</string>
+    <string name="main_05_item_09">设置</string>
+    <!--ThirdFragment-->
+    <string name="list_01_item_01">可投金额</string>
+    <string name="list_01_item_02">年化率</string>
+    <string name="list_01_item_03">期限</string>
+    <string name="list_01_item_04">％</string>
+    <string name="list_01_item_05">个月</string>
+    <!--LoginActivity-->
+    <string name="login_title">登录</string>
+    <string name="login_account">账号</string>
+    <string name="login_account_hint">请输入手机号码</string>
+    <string name="login_new_account_hint">请输入手机号码</string>
+    <string name="login_password">密码</string>
+    <string name="login_password_hint">请输入6位密码</string>
+    <string name="login_forgotpassword">忘记密码？</string>
+    <string name="login_registered">注册</string>
+    <!--RegisterActivity-->
+    <string name="register_title">注册</string>
+    <string name="register_title_forgot">忘记密码</string>
+    <string name="register_01">账号</string>
+    <string name="register_01_hint">请输入手机号</string>
+    <string name="register_02">验证码</string>
+    <string name="register_021">获取验证码</string>
+    <string name="register_02_hint">请输入手机验证码</string>
+    <string name="register_03">密码</string>
+    <string name="register_03_hint">密码范围在6~15位之间</string>
+    <string name="register_04">确认密码</string>
+    <string name="register_04_hint">请输入确认密码</string>
+    <string name="register_05">推荐人</string>
+    <string name="register_05_hint">请输入推荐码(选填)</string>
+    <string name="register_06">确定注册</string>
+    <string name="register_07">用户名</string>
+    <string name="register_07_hint">请输入6~16位用户名</string>
+
+    <!--AccountManagementActivity-->
+    <string name="accountmanage_title">账户管理</string>
+    <string name="accountmanage_01">个人设置</string>
+    <string name="accountmanage_02">额度申请</string>
+    <string name="accountmanage_03">密码设置</string>
+    <string name="accountmanage_04">安全认证</string>
+    <string name="accountmanage_05">VIP认证</string>
+    <string name="accountmanage_06">银行卡管理</string>
+    <string name="accountmanage_07">邀请好友</string>
+    <string name="accountmanage_08">站内信息</string>
+    <!--SettingsActivity-->
+    <string name="settings_item_01">关于我们</string>
+    <string name="settings_item_02">安全保障</string>
+    <string name="settings_item_03">帮助中心</string>
+    <string name="settings_item_04">快速入门</string>
+    <string name="settings_item_05">退出登录</string>
+    <!--PersonalSettingsActivity-->
+    <string name="ps_01">头像设置</string>
+    <string name="ps_02">用户名</string>
+    <string name="ps_02_hint">用户名即注册的手机号</string>
+    <!--NewsActivity-->
+    <string name="news_title">新闻公告</string>
+    <!--InvestmentActivity-->
+    <string name="invest_title">投资</string>
+    <string name="invest_01">项目总额</string>
+    <string name="invest_02">年化收益</string>
+    <string name="invest_03">项目期限</string>
+    <string name="invest_031">天</string>
+    <string name="invest_04">项目起期</string>
+    <string name="invest_05">还款方式</string>
+    <string name="invest_06">是否奖励</string>
+    <string name="invest_07">剩余时间</string>
+    <string name="invest_08">可投金额</string>
+    <string name="invest_09">最高投资金额</string>
+    <string name="invest_10">最低起投金额</string>
+    <string name="invest_11">投标奖励</string>
+    <string name="invest_12">项目详情</string>
+    <string name="invest_13">风险控制</string>
+    <string name="invest_14">投资记录</string>
+    <string name="invest_15">还款计划</string>
+    <string name="invest_16">立即投资</string>
+    <string name="invest_vp_01">序号</string>
+    <string name="invest_vp_02">投标人</string>
+    <string name="invest_vp_03">金额</string>
+    <string name="invest_vp_04">利息</string>
+    <string name="invest_vp_05">类型</string>
+    <string name="invest_vp_06">时间</string>
+    <!--ManageFinancesActivity-->
+    <string name="mf_title">理财</string>
+    <string name="mf_01">累计金额</string>
+    <string name="mf_02">还款方式</string>
+    <string name="mf_03">到期日期</string>
+    <string name="mf_04">计息方式</string>
+    <string name="mf_05">安全保障</string>
+    <string name="mf_06">产品介绍</string>
+    <string name="mf_07">投资记录</string>
+    <string name="mf_08">100的整数倍</string>
+    <!--TiroAndExperienceActivity-->
+    <string name="tae_title_1">新手区</string>
+    <string name="tae_title_2">体验区</string>
+    <!--IoanActivity-->
+    <string name="Ioan_title">我要借款</string>
+    <string name="Ioan_01">投标限制</string>
+    <string name="Ioan_02">待收限制</string>
+    <string name="Ioan_03">金额</string>
+    <string name="Ioan_04">详细说明</string>
+    <string name="Ioan_05">标题</string>
+    <string name="Ioan_06">是否密码标</string>
+    <string name="Ioan_07">图片</string>
+    <string name="Ioan_08">浏览</string>
+    <string name="Ioan_09">未选择图片</string>
+    <string name="Ioan_10">借款说明</string>
+    <string name="Ioan_11">提交</string>
+    <!--AmountApplyActivity-->
+    <string name="aa_title">额度申请</string>
+    <string name="aa_title_right">申请记录</string>
+    <string name="aa_01">申请记录</string>
+    <string name="aa_02">申请类型</string>
+    <string name="aa_03">借款信用额度</string>
+    <string name="aa_04">申请金额</string>
+    <string name="aa_05">提交申请</string>
+    <!--ApplyRecordActivity-->
+    <string name="ar_title">申请记录</string>
+    <string name="ar_01">提交时间</string>
+    <string name="ar_02">金额</string>
+    <string name="ar_03">审核状态</string>
+    <string name="ar_04">处理意见</string>
+    <string name="ar_05">授权额度</string>
+    <!--PasswordManageActivity-->
+    <string name="pm_title">密码设置</string>
+    <string name="pm_01">修改密码</string>
+    <string name="pm_02">交易密码</string>
+    <string name="pm_03">未设置</string>
+    <!--PasswordModifyActivity-->
+    <string name="pwm_title">修改密码</string>
+    <string name="pwm_01">原密码</string>
+    <string name="pwm_02">新密码</string>
+    <string name="pwm_03">确认新密码</string>
+    <string name="pwm_01_hint">请输入原密码</string>
+    <string name="pwm_02_hint">请输入新密码</string>
+    <string name="pwm_03_hint">请确认新密码</string>
+    <!--PasswordTransactionActivity-->
+    <string name="pt_title">交易密码</string>
+    <string name="pt_01">支付密码</string>
+    <string name="pt_02">确认新密码</string>
+    <string name="pt_03">原支付密码</string>
+    <string name="pt_04">新支付密码</string>
+    <string name="pt_01_hint">请输入支付密码</string>
+    <string name="pt_02_hint">请确认新密码</string>
+    <string name="pt_03_hint">第一次设置请输入登录密码</string>
+    <string name="pt_04_hint">请输入新支付密码</string>
+    <!--BankcardManagementActivity-->
+    <string name="bm_title">银行卡管理</string>
+    <string name="bm_01">添加银行卡</string>
+    <!--CredittransferDetailActivity-->
+    <string name="cd_title">债权转让</string>
+    <string name="cd_01">个月</string>
+    <string name="cd_02">转让期数</string>
+    <string name="cd_03">转让价格</string>
+    <string name="cd_03_hint">请输入转让价格</string>
+    <string name="cd_04">原始项目期数</string>
+    <string name="cd_05">原始项目还款方式</string>
+    <string name="cd_06">债权本金</string>
+    <string name="cd_07">待收利息</string>
+    <string name="cd_08">预期总收益</string>
+    <string name="cd_09">原始项目详情</string>
+
+    <!--BankcardAddActivity-->
+    <string name="ba_title">添加银行卡</string>
+    <string name="ba_01">选择银行</string>
+    <string name="ba_02">持卡人</string>
+    <string name="ba_03">卡号</string>
+    <string name="ba_04">手机号</string>
+    <string name="ba_06">开户行</string>
+    <string name="ba_06_hint">请输入开户行</string>
+    <string name="ba_02_hint">请输入持卡人姓名</string>
+    <string name="ba_03_hint">请输入卡号</string>
+    <string name="ba_04_hint">请输入手机号</string>
+    <string name="ba_05">所填卡号与银行预留手机号须匹配</string>
+    <!--ChoseBankActivity-->
+    <string name="cb_title">选择银行</string>
+    <!--SafetyCertificateActivity-->
+    <string name="sc_title">安全认证</string>
+    <string name="sc_01">实名认证</string>
+    <string name="sc_011">已认证</string>
+    <string name="sc_012">未认证</string>
+    <string name="sc_02">绑定手机</string>
+    <!--VerifiedActivity-->
+    <string name="vf_title">实名认证</string>
+    <string name="vf_01">真实姓名</string>
+    <string name="vf_02">身份证号</string>
+    <string name="vf_01_hint">请输入真实姓名</string>
+    <string name="vf_02_hint">请确认身份证号</string>
+    <!--ChangePhoneNumbersActivity-->
+    <string name="cpn_title">更换手机号</string>
+    <string name="cpn_01">手机号</string>
+    <string name="cpn_02">验证码</string>
+    <string name="cpn_01_hint">请输入当前绑定手机号</string>
+    <string name="cpn_01_hint_1">请输入新绑定手机号</string>
+    <!--VipApplyActivity-->
+    <string name="va_title">VIP申请</string>
+    <string name="va_01">申请理由</string>
+    <string name="va_02">提交申请</string>
+    <string name="va_03">选择您的业务指导客服</string>
+    <!--InviteFriendsActivity-->
+    <string name="if_title">邀请好友</string>
+    <string name="if_01">您可以通过QQ,MSN等IM工具或者微博与邮件把下面的连接告诉您的好友，邀请他们加入进来。</string>
+    <string name="if_02">邀请好友成功投标(不包括秒还标、净值标、天际交易),立即送您千分之2的奖金，快行动吧。</string>
+    <string name="if_03">邀请链接</string>
+    <string name="if_04">奖金记录</string>
+    <string name="if_05">推广明细</string>
+    <!--BonusRecordActivity-->
+    <string name="br_title">奖金记录</string>
+    <string name="br_01">您目前的奖金余额是</string>
+    <string name="br_02">您历史上累计获得奖金总额是</string>
+    <string name="br_03">编号</string>
+    <string name="br_04">发生日期</string>
+    <string name="br_05">奖金金额</string>
+    <string name="br_06">余额变动是由</string>
+    <!--PromotionDetailsActivity-->
+    <string name="pd_title">推广明细</string>
+    <string name="pd_01">您成功邀请的会员有</string>
+    <string name="pd_02">对您有投标奖励的会员有</string>
+    <!--LettersOfStationActivity-->
+    <string name="los_title">站内信件</string>
+    <!--WithdrawOrRechargeActivity-->
+    <string name="wor_title_01">取现</string>
+    <string name="wor_title_02">充值</string>
+    <string name="wor_title_right_01">取现记录</string>
+    <string name="wor_title_right_02">充值记录</string>
+    <string name="wor_01">账户余额</string>
+    <string name="wor_02">充值金额</string>
+    <string name="wor_02_hint">充值最低100元起</string>
+    <string name="wor_03">提现金额</string>
+    <string name="wor_03_hint">提现最低100元起</string>
+    <string name="wor_04">支付密码</string>
+    <string name="wor_04_hint">请输入支付密码</string>
+    <string name="wor_05">立即充值</string>
+    <string name="wor_06">立即提现</string>
+    <!--PayActivity-->
+    <string name="pay_title">支付</string>
+    <string name="pay_01">账户余额</string>
+    <string name="pay_02">支付额度</string>
+    <string name="pay_03">输入金额</string>
+    <string name="pay_03_hint">请输入金额</string>
+    <string name="pay_07">投资密码</string>
+    <string name="pay_07_hint">请输入投资密码</string>
+    <string name="pay_04">红包</string>
+    <string name="pay_05">加息券</string>
+    <string name="pay_06">立即支付</string>
+    <string name="pay_08">使用体验金</string>
+
+    <!--InvestmentManagementActivity-->
+    <string name="im_title">投资管理</string>
+    <string name="im_01">项目</string>
+    <string name="im_02">金额</string>
+    <string name="im_03">竞标中投资</string>
+    <string name="im_04">回收中投资</string>
+    <string name="im_05">收完的投资</string>
+    <string name="im_06">逾期的投资</string>
+    <string name="im_07">累计投资总额</string>
+    <!--ClaimsManagementActivity-->
+    <string name="cm_title">债权管理</string>
+    <!--MoneyManagementActivity-->
+    <string name="mm_title">理财管理</string>
+    <string name="mm_01">回收中的理财</string>
+    <string name="mm_02">已回收的理财</string>
+    <string name="mm_03">您目前回收中的投资金额是：</string>
+    <string name="mm_04">总共投标</string>
+    <string name="mm_05">投资</string>
+    <string name="mm_06">时间从</string>
+    <string name="mm_07">至</string>
+    <string name="mm_08">查看</string>
+    <!--MyAssetsActivity-->
+    <string name="ma_title">我的资产</string>
+    <string name="ma_title_right">资金历史明细</string>
+    <string name="ma_01">资金统计</string>
+    <string name="ma_02">可用现金金额</string>
+    <string name="ma_03">待收总额</string>
+    <string name="ma_04">冻结金额</string>
+    <string name="ma_05">账户资金总额</string>
+    <string name="ma_06">充值</string>
+    <string name="ma_07">提现</string>
+    <!--MyAssetsHistoryActivity-->
+    <string name="mah_title">资产历史明细</string>
+    <string name="mah_01">事件类型</string>
+    <!--MyRedpacketActivity-->
+    <string name="mr_title">我的红包</string>
+    <string name="mr_01">说明</string>
+    <string name="mr_02">红包金额</string>
+    <string name="mr_03">红包明细</string>
+    <!--IncreasedInterestActivity-->
+    <string name="ii_title">加息券</string>
+    <!--MsgListActivity-->
+    <string name="ml_title">站内信件</string>
+    <!--MsgDetailActivity-->
+    <string name="md_title">站内信件详情</string>
+    <!--pop_select_photo-->
+    <string name="psp_01">拍照</string>
+    <string name="psp_02">从手机相册中选择</string>
+    <string name="psp_03">取消</string>
+
+    <string name="progress">进度</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

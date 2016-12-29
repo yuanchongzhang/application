@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71px"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="(0,71)"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:background="#41B0E8"
+            android:tag="(8,35){25,0,0,0}" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17px"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:tag="(0,0){17,0,0,0}"
+            android:text="某大型商场装修资金"
+            android:textColor="#666666"
+
+            android:textStyle="bold"
+            tools:textSize="26px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E2E2E2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+
+        android:layout_marginTop="20px"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:tag="{0,20,0,0}(0,150)">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="(0,0)">
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:tag="(0,0,34)"
+                android:text="0.00元"
+                android:textColor="#41B0E8"
+
+                android:textSize="32px"
+                android:textStyle="bold"
+                tools:textSize="34px" />
+
+            <TextView
+                android:id="@+id/tv_edit_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:tag="(0,0,24){0,30,0,0}"
+                android:text="@string/list_01_item_02"
+                android:textColor="@color/colorBlack"
+                tools:textSize="24px" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/colorItemDividGrey"
+            android:tag="{0,39,0,27}(2,0)"
+            android:visibility="gone"
+            tools:layout_marginBottom="27px"
+            tools:layout_marginTop="39px" />
+
+        <!--  <LinearLayout
+              android:layout_width="196px"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:tag="(216,0)">
+
+              <TextView
+                  android:id="@+id/tv_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:tag="(0,0,40)"
+                  android:text="123"
+                  android:textColor="#FD9809"
+                  tools:textSize="40px" />
+
+              <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="50px"
+                  android:layout_gravity="center"
+                  android:orientation="vertical"
+                  android:tag="(0,50)">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:tag="{22,0,0,0}(0,0,22)"
+                      android:text="@string/list_01_item_03"
+                      android:textColor="@color/colorItemTextGrey2"
+                      android:textSize="22px"
+                      tools:layout_marginLeft="22px" />
+
+                  <TextView
+                      android:id="@+id/tv_danwei"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:tag="{2,0,0,0}(0,0,22)"
+                      android:text="@string/list_01_item_05"
+                      android:textColor="@color/colorMainBlue"
+                      android:visibility="gone"
+                      tools:layout_marginTop="2px"
+                      tools:textSize="22px" />
+              </RelativeLayout>
+
+
+          </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="(0,0)">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:tag="(0,0)">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:tag="(0,0,34)"
+                    android:text="0.00元"
+                    android:textColor="#FD9809"
+                    android:textStyle="bold"
+                    tools:textSize="34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:tag="(0,0,24){10,0,0,0}"
+                    android:text="个月"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24px" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:tag="(0,0,24){0,30,0,0}"
+                android:text="期限"
+                android:textColor="@color/colorBlack"
+                tools:textSize="24px" />
+
+
+        </LinearLayout>
+
+        <!--  <LinearLayout
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:tag="{0,0,0,0}(144,144)">
+
+              <TextView
+                  android:id="@+id/tv_sumMoney"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:tag="{0,10,0,0}(0,0,23)"
+                  android:text="8.888.888.88元"
+                  android:textColor="@color/colorItemTextGrey1"
+                  android:visibility="visible"
+                  tools:layout_marginRight="20px"
+                  tools:layout_marginTop="10px"
+                  tools:textSize="23px" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:tag="{22,0,0,0}(0,0,22)"
+                  android:text="可投金额"
+                  android:textColor="@color/colorItemTextGrey2"
+                  android:textSize="22px"
+                  tools:layout_marginLeft="22px" />
+          </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="(0,0)">
+
+            <!--  <TextView
+                  android:id="@+id/tv_sumMoney"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:gravity="center_horizontal"
+                  android:tag="(0,0,30)"
+                  android:text="0.00元"
+                  android:textColor="#41B0E8"
+                  android:textStyle="bold"
+                  tools:textSize="30px" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:tag="(0,0)">
+
+                <TextView
+                    android:id="@+id/tv_sumMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:tag="(0,0,34)"
+                    android:text="0.00元"
+                    android:textColor="#41B0E8"
+                    android:textStyle="bold"
+                    tools:textSize="34px" />
+
+                <!--  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="万元"
+                      android:textSize="12sp"
+
+                      />-->
+                <TextView
+                    android:id="@+id/text_danwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:tag="(0,0,24){10,0,0,0}"
+                    android:text="万元"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:tag="(0,0,24){0,30,0,0}"
+                android:text="可投金额"
+
+                android:textColor="@color/colorBlack"
+                tools:textSize="24px" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:tag="(0,70)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:layout_weight="1"
+            android:tag="(0,0,24){25,0,0,0}"
+            android:text="进度"
+            android:textSize="24px" />
+
+        <com.haiying.p2papp.view.ProgressBar
+            android:id="@+id/progress_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+
+            android:layout_gravity="center_vertical"
+
+            android:layout_weight="6"
+
+            app:backgroundColor="#E2E2E2"
+            app:endFillColor="#FD9809"
+            app:middleFillColor="#FD9809"
+            app:startFillColor="#FD9809" />
+        <!-- android:tag="(0,30){30,0,36,0}"
+                app:backgroundColor="#E2E2E2"
+        -->
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="43px"
+            android:tag="(0,0,30){18,0,43,0}"
+            android:text="57.14%"
+            android:textColor="#FD9809"
+            android:textStyle="bold"
+            tools:textSize="30px" />
+
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="78px"
+         android:orientation="vertical"
+         >
+      &lt;!&ndash;   <com.timqi.sectorprogressview.ColorfulRingProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/crpv"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_gravity="center"
+             app:bgColor="#000000"
+             app:fgColorEnd="#F05087"
+             app:fgColorStart="#8B7BCE"
+
+             app:percent="57.14"
+             app:startAngle="136.26"
+             app:strokeWidth="4dp" />&ndash;&gt;
+     &lt;!&ndash;    <com.haiying.p2papp.view.HorizontalNumProgressBar
+             android:id="@+id/progress_horizontal"
+             android:layout_width="match_parent"
+
+             android:layout_height="30px"
+             android:layout_gravity="center"
+
+             />&ndash;&gt;
+
+      &lt;!&ndash;   <ProgressBar
+             android:id="@+id/progress_horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:max="100"
+             style="@android:style/Widget.ProgressBar.Horizontal"
+             android:background="#FD9809"
+             />&ndash;&gt;
+
+         <com.haiying.p2papp.view.ProgressBar
+             android:id="@+id/progress_horizontal"
+             android:layout_marginTop="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="10dp"
+             app:backgroundColor="#d8d8d8"
+             app:startFillColor="#505050"
+             app:middleFillColor="#B03060"
+             app:endFillColor="#e03060"
+             app:arrowPointRadius="6dp"/>
+
+         <TextView
+             android:id="@+id/tv_progress"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:tag="(0,0,22)"
+             android:text="57.14%"
+             android:layout_gravity="center"
+             android:textColor="@color/colorItemTextGrey2"
+             tools:textSize="22px" />
+
+     </LinearLayout>
+ -->
+
+
+</LinearLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AccountManagementActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorLakeBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/accountmanage_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="57px"-->
+            <!--android:layout_height="58px"-->
+            <!--android:src="@mipmap/ic_accountmanage_01"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(29)"
+            android:text="@string/accountmanage_01"
+            android:gravity="center_vertical"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+    <LinearLayout
+        android:id="@+id/ll_02"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="57px"-->
+            <!--android:layout_height="58px"-->
+            <!--android:src="@mipmap/ic_accountmanage_02"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(29)"
+            android:text="@string/accountmanage_02"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+    <LinearLayout
+        android:id="@+id/ll_03"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="57px"-->
+            <!--android:layout_height="58px"-->
+            <!--android:src="@mipmap/ic_accountmanage_03"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="@string/accountmanage_03"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+    <LinearLayout
+        android:id="@+id/ll_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="57px"-->
+            <!--android:layout_height="58px"-->
+            <!--android:src="@mipmap/ic_accountmanage_04"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="@string/accountmanage_04"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)"
+          />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/ic_accountmanage_05"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="@string/accountmanage_05"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_06"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="57px"-->
+            <!--android:layout_height="58px"-->
+            <!--android:src="@mipmap/ic_accountmanage_06"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="@string/accountmanage_06"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+    <LinearLayout
+        android:id="@+id/ll_07"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="57px"-->
+            <!--android:layout_height="58px"-->
+            <!--android:src="@mipmap/ic_accountmanage_07"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="@string/accountmanage_07"
+            android:gravity="center_vertical"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2" />
+
+    <LinearLayout
+        android:id="@+id/ll_08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:tag="(0,90)">
+
+        <!--<ImageView-->
+            <!--android:layout_width="57px"-->
+            <!--android:layout_height="58px"-->
+            <!--android:src="@mipmap/ic_accountmanage_08"-->
+            <!--android:tag="{22,24,0,0}(57,58)"-->
+            <!--tools:layout_marginLeft="22px"-->
+            <!--tools:layout_marginTop="24px" />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:tag="{25,0,0,0}(0,0,29)"
+            android:text="@string/accountmanage_08"
+            android:textColor="#585858" />
+
+        <ImageView
+            android:id="@+id/iv_am_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fan"
+            android:tag="{0,0,25,0}(15,30)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGreydividingline2"
+     />
+</LinearLayout>

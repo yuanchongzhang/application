@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tag="(0,143)"
+    android:layout_width="match_parent"
+    android:layout_height="143px"
+    android:orientation="vertical">
+        <LinearLayout
+        android:tag="(0,142)"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="142px">
+        <LinearLayout
+            android:tag="{53,0,0,0}(0,0,26)"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="53px"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_name"
+                android:tag="(0,0,28)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行名称"
+                android:textColor="#585858"
+                android:textSize="28px"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:tag="{0,25,0,0}(0,0,26)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:text="2016-03-11 17:17"
+                android:textColor="#A4A4A4"
+                android:textSize="26px"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:tag="{0,0,10,0}(0,0,28)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖金贡献："
+            android:textColor="#585858"
+            android:textSize="28px"
+            android:layout_marginRight="10px"/>
+        <TextView
+            android:id="@+id/tv_02"
+            android:tag="{0,0,30,0}(0,0,28)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-1-8"
+            android:textColor="#585858"
+            android:textSize="28px"
+            android:layout_marginRight="30px"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/colorGreydividingline2"
+        android:tag="{0,0,0,0}(0,1)" />
+</LinearLayout>

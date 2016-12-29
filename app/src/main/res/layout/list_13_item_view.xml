@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back_ground_jiaxi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/jiaxiquan_selected"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginRight="30px"
+        android:layout_marginTop="80px"
+        android:tag="(0,0,50){40,80,30,0}"
+        android:layout_marginLeft="40px"
+        android:text="1"
+        android:textColor="#FD9809"
+        tools:textSize="50px" />
+
+    <TextView
+        android:id="@+id/tv_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="25px"
+        android:tag="{30,25,0,0}(0,0,25)"
+        android:text="2015.5.6-2016.5.6"
+        android:textColor="@color/colorTextGrey"
+        tools:textSize="25px" />
+
+    <TextView
+        android:id="@+id/tv_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="(0,0,46)"
+        android:text="已使用"
+        android:textColor="@color/colorTextGrey"
+        android:visibility="gone"
+        tools:textSize="46px" />
+    <!--  <LinearLayout
+          android:id="@+id/back_ground_jiaxi"
+          android:layout_width="match_parent"
+          android:layout_height="302px"
+
+          android:orientation="vertical"
+          android:gravity="center"
+          android:tag="(0,302)">
+
+          <TextView
+              android:id="@+id/tv_01"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:tag="(0,0,100)"
+              android:text="1"
+              android:textColor="#FD9809"
+              android:layout_gravity="center"
+              android:gravity="center"
+              tools:textSize="100px" />
+
+
+
+          <TextView
+              android:id="@+id/tv_02"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:tag="(0,0,46)"
+              android:text="已使用"
+              android:textColor="@color/colorTextGrey"
+              android:visibility="gone"
+              tools:textSize="46px" />
+
+          <TextView
+              android:id="@+id/tv_03"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_marginTop="25px"
+              android:tag="{0,25,0,0}(0,0,25)"
+              android:text="2015.5.6-2016.5.6"
+              android:textColor="@color/colorTextGrey"
+              tools:textSize="25px" />
+
+
+
+      </LinearLayout>-->
+</LinearLayout>

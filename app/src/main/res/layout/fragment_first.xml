@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context="com.haiying.p2papp.fragment.FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:tag="(0,90)">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_title"
+                android:tag="(36,36)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="(38){15,0,0,0}"
+                android:text="@string/main_01_title_01"
+                android:textColor="@color/colorHomeTitle"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_mailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_main_firstfragment_mailer"
+            android:tag="(37,37){0,0,25,0}" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/convenientBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="(0,370)"
+                android:layout_gravity="center"
+
+
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+               />
+          <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="(0,370)">
+ app:canLoop="true"
+                <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/convenientBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="(0,370)"
+                    android:layout_centerHorizontal="true"
+                    app:canLoop="true" />
+            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:tag="(0,239)">
+
+                <LinearLayout
+                    android:id="@+id/ll_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_main_firstfragment_01"
+                        android:tag="(60,60){0,30,0,0}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(30){0,18,0,0}"
+                        android:text="@string/main_01_01_01"
+                        android:textColor="@color/colorHomeTextBlack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(26){0,18,0,30}"
+                        android:text="@string/main_01_01_02"
+                        android:textColor="@color/colorHomeTextGrey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/ll_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_main_firstfragment_02"
+                        android:tag="(60,60){0,30,0,0}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(30){0,18,0,0}"
+                        android:text="@string/main_01_02_01"
+                        android:textColor="@color/colorHomeTextBlack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(26){0,18,0,30}"
+                        android:text="@string/main_01_02_02"
+                        android:textColor="@color/colorHomeTextGrey" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_02"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:tag="(32){0,30,0,0}"-->
+                    <!--android:textColor="@color/colorHomeTextBlack"-->
+                    <!--tools:text="@string/main_01_02_01" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_022"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:tag="(26){0,15,0,0}"-->
+                    <!--android:textColor="@color/colorHomeTextGrey"-->
+                    <!--tools:text="@string/main_01_02_02" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider"
+                android:tag="{0,10,0,0}" />
+
+            <com.zcx.helper.view.AdaptListView
+                android:id="@+id/lv_home_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:tag="[35,0,0,0]">
+
+            </com.zcx.helper.view.AdaptListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

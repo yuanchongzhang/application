@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+              android:background="#F6F6F6"
+    tools:context=".activity.VerifiedActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/vf_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_marginTop="12px"
+        android:orientation="horizontal"
+        android:tag="{0,12,0,0}(0,97)">
+
+
+
+        <TextView
+            android:layout_width="242px"
+            android:layout_height="wrap_content"
+            android:tag="{3,6,0,0}(242,0,26)"
+            android:text="@string/vf_01"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="8px"
+            tools:textSize="26px" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="394px"
+            android:layout_height="51px"
+            android:background="@drawable/selector_bg_main_04_edit"
+            android:gravity="center"
+            android:hint="@string/vf_01_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:tag="{0,12,0,0}[5,0,5,0](394,51,26)"
+            android:textColorHint="@color/colorTextHint"
+            tools:layout_marginTop="12px"
+            tools:paddingLeft="5px"
+            tools:paddingRight="5px"
+            tools:textSize="26px" />
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:tag="{0,30,0,0}(0,90)">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:tag="{23,0,0,0}(29)"
+            android:text="真实姓名"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="请输入真实姓名"
+
+            android:maxLength="11"
+            android:singleLine="true"
+            android:tag="{107,0,0,0}(29)"
+            android:textColorHint="@color/colorTextHint" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/layer_gray_top_bottom"/>
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:orientation="horizontal"
+        android:tag="(0,97)">
+
+
+
+        <TextView
+            android:layout_width="242px"
+            android:layout_height="wrap_content"
+            android:tag="{3,6,0,0}(242,0,26)"
+            android:text="@string/vf_02"
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="8px"
+            tools:textSize="26px" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="394px"
+            android:layout_height="51px"
+            android:background="@drawable/selector_bg_main_04_edit"
+            android:gravity="center"
+            android:hint="@string/vf_02_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="18"
+            android:tag="{0,12,0,0}[5,0,5,0](394,51,26)"
+            android:textColorHint="@color/colorTextHint"
+            tools:layout_marginTop="12px"
+            tools:paddingLeft="5px"
+            tools:paddingRight="5px"
+            tools:textSize="26px" />
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:tag="{0,30,0,0}(0,90)">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:tag="{23,0,0,0}(29)"
+            android:text="身份证号"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="请确认身份证号"
+
+            android:maxLines="1"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:tag="{107,0,0,0}(29)"
+            android:textColorHint="@color/colorTextHint" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/layer_gray_top_bottom"/>
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <Button
+        android:id="@+id/bt_01"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@drawable/selector_bg_main_04_bt"
+        android:tag="(0,80,26)"
+        android:text="@string/register_06"
+        android:textColor="@color/colorWhite" />-->
+    <Button
+        android:id="@+id/bt_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_login_bt"
+        android:tag="(0,90,26){25,60,25,0}"
+        android:text="确定"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_juxing_investuse"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:tag="(0,70)">
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+
+            android:maxLines="1"
+            android:tag="{25,0,0,0}(0,0,26)"
+            android:text="标号"
+            android:textColor="#666666"
+
+            tools:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="94px"
+            android:tag="{94,0,2,0}(0,0,26)"
+            android:text="借入人"
+            android:textColor="#666666"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E2E2E2" />
+
+
+    <TextView
+        android:id="@+id/tv_01"
+        android:layout_width="wrap_content"
+        android:layout_height="42px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="25px"
+        android:layout_weight="2"
+        android:background="@drawable/shape_juxing_licai"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="18px"
+        android:paddingRight="18px"
+        android:tag="{25,25,0,0}(0,42,28)[18,0,18,0]"
+        android:text="标题：创业使用"
+        android:textColor="@color/colorWhite"
+        tools:textSize="28px" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+        android:tag="{0,20,0,0}(0,172)">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20px"
+            android:tag="(0,0)[20,0,0,0]">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:tag="{0,20,0,0}(0,0,34)"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_06"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:tag="{0,0,0,0}(0,0,34)"
+                    android:layout_gravity="center_vertical"
+                    android:text="0.00"
+                    android:textColor="#FD9809"
+                    android:textStyle="bold"
+                    tools:textSize="34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#585858"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:tag="(0,0,26){10,0,0,0}"
+                    android:text="元"
+                    android:textSize="26px"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tv_edit_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="33px"
+                android:layout_marginTop="26px"
+                android:tag="(0,0,24){0,26,0,33}"
+                android:text="已还本息"
+                android:textColor="#A4A4A4"
+                tools:textSize="24px" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20px"
+            android:tag="(0,0)[20,0,0,0]">
+
+            <TextView
+                android:id="@+id/tv_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:tag="{0,20,0,0}(0,0,34)"
+                android:text="0.00元"
+
+                android:textColor="#41B0E8"
+                android:textStyle="bold"
+                tools:textSize="34px" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="33px"
+                android:layout_marginTop="26px"
+                android:tag="(0,0,24){0,26,0,33}"
+                android:text="年化利率"
+                android:textColor="#A4A4A4"
+                tools:textSize="24px" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20px"
+            android:tag="(0,0)[20,0,0,0]">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:tag="{0,20,0,0}(0,0,34)"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_07"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:tag="{0,0,0,0}(0,0,34)"
+                    android:layout_gravity="center_vertical"
+                    android:text="0.00"
+                    android:textColor="#FD9809"
+                    android:textStyle="bold"
+                    tools:textSize="34px" />
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="33px"
+                android:layout_marginTop="26px"
+                android:tag="(0,0,24){0,26,0,33}"
+                android:text="总期数（还款期）"
+                android:textColor="#A4A4A4"
+                tools:textSize="24px" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="302px"
+        android:background="@drawable/cardview_bwbg"
+        android:visibility="gone"
+
+        android:tag="(0,302)">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="(0,280)">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="172px"
+                android:layout_marginTop="108px"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:tag="{0,108,0,0}(0,172)">
+
+                <LinearLayout
+                    android:layout_width="210px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:tag="(210,0)">
+
+            <!--        <TextView
+                        android:id="@+id/tv_edit_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(0,0,22)"
+                        android:text="投资金额"
+                        android:textColor="@color/colorBlack"
+                        tools:textSize="22px" />-->
+
+                    <TextView
+                        android:id="@+id/tv_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:tag="{0,20,0,0}(0,0,22)"
+                        android:text="0.00元"
+                        android:textColor="@color/colorMainBlue"
+                        android:textStyle="bold"
+                        tools:textSize="22px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorItemDividGrey"
+                    android:tag="{0,39,0,27}(2,0)"
+                    tools:layout_marginBottom="27px"
+                    tools:layout_marginTop="39px" />
+
+                <LinearLayout
+                    android:layout_width="208px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:tag="(208,0)">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(0,0,22)"
+                        android:text="已还本息"
+                        android:textColor="@color/colorBlack"
+                        tools:textSize="22px" />
+
+                 <!--   <TextView
+                        android:id="@+id/tv_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:tag="{0,20,0,0}(0,0,22)"
+                        android:text="0.00元"
+                        android:textColor="@color/colorMainBlue"
+                        android:textStyle="bold"
+                        tools:textSize="22px" />-->
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorItemDividGrey"
+                    android:tag="{0,39,0,27}(2,0)"
+                    tools:layout_marginBottom="27px"
+                    tools:layout_marginTop="39px" />
+
+                <LinearLayout
+                    android:layout_width="274px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:tag="(274,0)">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="(0,0,22)"
+                        android:text="总期数(还款期)"
+                        android:textColor="@color/colorBlack"
+                        tools:textSize="22px" />
+<!--
+                    <TextView
+                        android:id="@+id/tv_07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:tag="{0,20,0,0}(0,0,22)"
+                        android:text="0期"
+                        android:textColor="@color/colorMainBlue"
+                        android:textStyle="bold"
+                        tools:textSize="22px" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108px"
+                android:orientation="horizontal"
+                android:tag="(0,108)">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="108px"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:tag="(0,108)">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="21px"
+                        android:layout_weight="1"
+                        android:baselineAligned="true"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:tag="{21,0,0,0}(0,0)">
+
+                 <!--       <TextView
+                            android:id="@+id/tv_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="{0,0,0,0}(0,0,26)"
+                            android:text="标题：创业使用"
+                            android:textColor="@color/colorMainBlue"
+                            android:textStyle="bold"
+                            tools:textSize="26px" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40px"
+                            android:tag="{40,0,0,0}(0,0,22)"
+                            android:text="标号："
+                            android:textColor="@color/colorBlack"
+                            tools:textSize="22px" />
+
+                    <!--    <TextView
+                            android:id="@+id/tv_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="(0,0,22)"
+                            android:text="1000"
+                            android:textColor="@color/colorForgotPink"
+                            tools:textSize="22px" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="383px"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="21px"
+                        android:layout_marginRight="26px"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:orientation="horizontal"
+                        android:tag="{21,0,26,0}(383,0)">
+
+                 <!--       <TextView
+                            android:id="@+id/tv_03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:tag="{0,0,0,0}(0,0,22)"
+                            android:text="借入人：张某"
+                            android:textColor="@color/colorBlack"
+                            tools:textSize="22px" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="28px"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="{0,0,28,0}(0,0)">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="4px"
+                        android:tag="(0,0,26)"
+                        android:text="年华利率： "
+                        android:textColor="@color/colorForgotPink"
+                        tools:textSize="26px" />
+
+               <!--     <TextView
+                        android:id="@+id/tv_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:tag="(0,0,42)"
+                        android:text="12"
+                        android:textColor="@color/colorForgotPink"
+                        android:textStyle="bold"
+                        tools:textSize="42px" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="4px"
+                        android:tag="(0,0,26)"
+                        android:text="％"
+                        android:textColor="@color/colorForgotPink"
+                        tools:textSize="26px" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

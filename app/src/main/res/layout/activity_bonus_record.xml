@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".activity.BonusRecordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/br_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="(0,130)">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:tag="{25,0,0,0}(0,0,26)"
+            android:text="截至  "
+            android:textColor="#666666"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25px"
+            android:tag="{0,0,25,0}(0,0,26)"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            android:visibility="gone"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25px"
+            android:tag="{0,0,25,0}(0,0,26)"
+            android:text="asdfffffffffffffffffffffffffffffffffffffffff"
+            android:textColor="@color/colorBlack"
+            android:singleLine="false"
+            android:visibility="gone"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:tag="(0,142)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(0,0,26)"
+            android:text="@string/br_01"
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />
+<!--
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25px"
+            android:tag="{0,0,25,0}(0,0,26)"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:tag="(0,142)">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_weight="1"
+            android:tag="{25,0,0,0}(0,0,26)"
+            android:text="@string/br_02"
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />
+
+      <!--  <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25px"
+            android:tag="{0,0,25,0}(0,0,26)"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:tag="{0,30,0,0}(0,90)">
+
+        <TextView
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(120,0,26)"
+            android:text="@string/br_03"
+            android:textColor="#585858"
+            android:textSize="26px" />
+
+        <TextView
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(250,0,26)"
+            android:text="@string/br_04"
+            android:textColor="#585858"
+            android:textSize="26px" />
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(150,0,26)"
+            android:text="@string/br_05"
+            android:textColor="#585858"
+            android:textSize="26px" />
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="(200,0,26)"
+            android:text="@string/br_06"
+            android:textColor="#585858"
+            android:textSize="26px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E2E2E2"
+        />
+
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/store_house_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/list_02_item_view"></android.support.v7.widget.RecyclerView>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

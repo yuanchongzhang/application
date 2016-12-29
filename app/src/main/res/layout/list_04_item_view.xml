@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="67px"
+    android:orientation="vertical"
+    android:tag="(0,67)">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="(0,67)">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:tag="(120,0,26)"
+            android:text="@string/br_03"
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:tag="(250,0,26)"
+            android:text="@string/br_04"
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:tag="(150,0,26)"
+            android:text="@string/br_05"
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:tag="(200,0,26)"
+            android:text="@string/br_06"
+            android:textColor="@color/colorBlack"
+            android:textSize="26px" />
+
+    </LinearLayout>
+</LinearLayout>

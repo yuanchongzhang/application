@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".activity.InviteFriendsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text="@string/if_title"
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:tag="(0,320)">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="30px"
+            android:lineSpacingExtra="2dp"
+            android:tag="{40,30,40,0}(0,0,30)"
+            android:text="邀请好友"
+            android:textColor="#353535"
+            android:textSize="30px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="30px"
+            android:lineSpacingExtra="2dp"
+            android:tag="{40,30,40,0}(0,0,26)"
+            android:text=""
+            android:textColor="#585858"
+            android:textSize="26px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="30px"
+            android:lineSpacingExtra="2dp"
+            android:tag="{40,30,40,0}(0,0,26)"
+            android:text="asdfasdf"
+            android:textColor="#585858"
+
+            android:textSize="26px"
+
+            />
+
+    </LinearLayout>
+
+    <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您可以通过QQ,MSN等IM工具"
+
+            />-->
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:layout_marginTop="25px"
+            android:background="@color/colorThirdBgGrey"
+            android:tag="{0,25,0,0}(0,75)">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="{23,17,0,0}(0,0,26)"
+                android:text="@string/if_03"
+                android:textColor="@color/colorBlack"
+                tools:layout_marginLeft="23px"
+                tools:layout_marginTop="17px"
+                tools:textSize="26px" />
+        </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/et_01"
+        android:layout_width="match_parent"
+        android:layout_height="203px"
+        android:background="@color/colorWhite"
+        android:gravity="top"
+        android:hint="@string/va_01"
+        android:orientation="vertical"
+        android:tag="{0,23,0,0}[0,0,0,0](0,203,22)"
+
+        tools:layout_marginTop="23px"
+
+
+
+
+        tools:textSize="22px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="{40,30,0,0}(0,0,30)"
+            android:text="@string/if_03"
+            android:layout_marginLeft="40px"
+            android:textColor="#353535"
+            android:layout_marginTop="30px"
+            android:textSize="30px"
+         />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:tag="(0,0,26){40,20,0,0}"
+            android:text="asdfsadf"
+            android:layout_marginLeft="40px"
+            android:textColor="#A4A4A4"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:tag="(0,80)">
+
+        <Button
+            android:id="@+id/bt_01"
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:layout_marginLeft="27px"
+            android:layout_marginRight="27px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_yaoqing"
+            android:tag="(0,80,26){27,0,27,0}"
+            android:text="@string/if_04"
+            android:textColor="#41B0E8" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:tag="(1,60)"></View>
+
+        <Button
+            android:id="@+id/bt_02"
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:layout_marginLeft="27px"
+            android:layout_marginRight="27px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_yaoqing"
+            android:tag="(0,80,26){27,0,27,0}"
+            android:text="@string/if_05"
+            android:textColor="#41B0E8" />
+    </LinearLayout>
+
+</LinearLayout>

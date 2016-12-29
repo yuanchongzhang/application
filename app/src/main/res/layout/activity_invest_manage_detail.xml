@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".activity.InvestManageDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorMainBlue"
+        android:tag="(0,100)">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="(0,0,32)"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            tools:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="64px"
+            android:layout_height="78px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBack"
+            android:src="@mipmap/ic_action_back"
+            android:tag="[20,20,20,20](64,78)"
+            android:visibility="visible"
+            tools:padding="20px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81px"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:tag="(0,81)">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="(0,0,28)"
+            android:text="竞标中的投资"
+            android:textColor="#41B0E8"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/iv_01"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginLeft="25px"
+            android:src="@mipmap/arrow_down_quan"
+            android:tag="{25,0,0,0}(32,32)" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sp_01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"></Spinner>
+
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="71px"
+        android:layout_gravity="center_vertical"
+        android:background="#F6F6F6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="[0,0,0,0](0,71)">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="gone">
+
+            <!--   <ImageView
+                   android:layout_width="11px"
+                   android:layout_height="11px"
+                   android:layout_marginTop="5px"
+                   android:src="@mipmap/ic_symbol_circle_mid_grey"
+                   android:tag="{0,5,1,0}(11,11)"
+                   android:visibility="visible" />
+
+               <ImageView
+                   android:layout_width="19px"
+                   android:layout_height="19px"
+                   android:layout_marginTop="11px"
+                   android:src="@mipmap/ic_symbol_circle_big_red"
+                   android:tag="{0,11,0,0}(19,19)"
+                   android:visibility="visible" />
+
+               <ImageView
+                   android:layout_width="11px"
+                   android:layout_height="11px"
+                   android:layout_marginRight="1px"
+                   android:layout_marginTop="11px"
+                   android:src="@mipmap/ic_symbol_circle_mid_grey"
+                   android:tag="{0,11,1,0}(11,11)"
+                   android:visibility="visible" />
+
+               <ImageView
+                   android:layout_width="11px"
+                   android:layout_height="11px"
+                   android:layout_marginRight="1px"
+                   android:layout_marginTop="12px"
+                   android:src="@mipmap/ic_symbol_circle_mid_grey"
+                   android:tag="{0,12,1,0}(11,11)"
+                   android:visibility="visible" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jingbiao_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:tag="{34,0,0,0}(0,0,26)"
+            android:text="您目前竞标中的投资总额是: "
+            android:textColor="@color/colorBlack"
+            tools:layout_marginLeft="34px"
+            tools:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+
+            android:tag="{15,0,0,0}(0,0,26)"
+            android:text="0.0元"
+            android:textColor="#FD9809"
+            tools:layout_marginLeft="3px"
+            tools:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3px"
+            android:gravity="center_vertical"
+            android:tag="(0,0,26){3,0,0,0}"
+            android:text="0笔"
+            android:textColor="#666666"
+            tools:textSize="26px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_02"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,97)"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="57px"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="(57,0)"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="5px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,5,1,0}(11,11)"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="19px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_big_red"
+                android:tag="{0,11,0,0}(19,19)"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_03"
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="11px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,11,1,0}(11,11)"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_02"
+                android:layout_width="11px"
+                android:layout_height="11px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="12px"
+                android:src="@mipmap/ic_symbol_circle_mid_grey"
+                android:tag="{0,12,1,0}(11,11)"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="242px"
+            android:layout_height="wrap_content"
+            android:tag="{3,21,0,0}(242,0,26)"
+            android:text="@string/mm_04"
+            android:textColor="@color/colorBlack"
+            android:visibility="gone"
+            tools:layout_marginLeft="3px"
+            tools:layout_marginTop="20px"
+            tools:textSize="26px" />
+
+        <!--<TextView
+                   android:id="@+id/tv_02"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="26px"
+                   android:layout_weight="1"
+                   android:gravity="right"
+                   android:tag="{3,20,26,0}(242,0,26)"
+                   android:text="0笔"
+                   android:textColor="@color/colorBlack"
+                   tools:layout_marginLeft="3px"
+                   tools:layout_marginTop="20px"
+                   tools:textSize="26px" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_03"
+        android:layout_width="match_parent"
+        android:layout_height="106px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:tag="(0,106)"
+
+        android:visibility="gone">
+        <!--
+                <LinearLayout
+                    android:layout_width="57px"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:tag="(57,0)"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="11px"
+                        android:layout_height="11px"
+                        android:layout_marginRight="1px"
+                        android:layout_marginTop="5px"
+                        android:src="@mipmap/ic_symbol_circle_mid_grey"
+                        android:tag="{0,5,1,0}(11,11)"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="19px"
+                        android:layout_height="19px"
+                        android:layout_marginTop="11px"
+                        android:src="@mipmap/ic_symbol_circle_big_red"
+                        android:tag="{0,11,0,0}(19,19)"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="11px"
+                        android:layout_height="11px"
+                        android:layout_marginTop="11px"
+                        android:src="@mipmap/ic_symbol_circle_mid_grey"
+                        android:tag="{0,11,1,0}(11,11)"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="11px"
+                        android:layout_height="11px"
+                        android:layout_marginTop="12px"
+                        android:src="@mipmap/ic_symbol_circle_mid_grey"
+                        android:tag="{0,12,1,0}(11,11)"
+                        android:visibility="gone" />
+                </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:tag="{3,21,0,0}(0,0,28)"
+                android:text="@string/mm_05"
+                android:textColor="@color/colorBlack"
+                tools:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:tag="{20,0,0,0}(0,0,36)"
+                android:text="0.0元"
+                android:textColor="@color/colorBlack"
+                tools:layout_marginLeft="20px"
+
+                tools:textSize="36px" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_04"
+        android:layout_width="match_parent"
+        android:layout_height="290px"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="21px"
+        android:tag="[0,0,0,21](0,290)"
+        android:visibility="visible">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal"
+            android:tag="(0,0){0,10,0,0}">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:tag="{45,0,0,0}(0,0,26)"
+                android:text="开始"
+                android:textColor="#585858" />
+
+            <TextView
+                android:id="@+id/et_01"
+                android:layout_width="match_parent"
+                android:layout_height="68px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35px"
+                android:layout_marginRight="45px"
+                android:background="#F6F6F6"
+                android:drawableRight="@mipmap/rili_pic_2"
+                android:gravity="center"
+                android:paddingRight="25px"
+
+                android:tag="{35,0,45,0}(0,68,26)[0,0,25,0]" />
+
+            <ImageView
+                android:id="@+id/iv_04"
+                android:layout_width="match_parent"
+                android:layout_height="37px"
+                android:layout_marginLeft="17px"
+                android:src="@mipmap/ic_action_downarrow_blue"
+                android:tag="{17,0,0,0}(36,37)"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:orientation="horizontal"
+            android:tag="(0,0,24)">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45px"
+                android:gravity="center_vertical"
+                android:tag="{45,0,0,0}(0,0,26)"
+                android:text="截止"
+                android:textColor="#585858" />
+
+            <TextView
+                android:id="@+id/et_02"
+                android:layout_width="match_parent"
+                android:layout_height="68px"
+                android:layout_marginLeft="35px"
+                android:layout_marginRight="45px"
+                android:background="#F6F6F6"
+                android:drawableRight="@mipmap/rili_pic_2"
+                android:gravity="center"
+                android:paddingRight="25px"
+                android:tag="{35,0,45,0}(0,68,26)[0,0,25,0]" />
+
+            <ImageView
+                android:id="@+id/iv_05"
+                android:layout_width="36px"
+                android:layout_height="37px"
+                android:layout_marginLeft="17px"
+                android:paddingRight="25px"
+                android:src="@mipmap/ic_action_downarrow_blue"
+                android:tag="{17,0,0,0}(36,37)"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_01"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:layout_marginLeft="130px"
+            android:layout_marginRight="130px"
+            android:layout_marginTop="25px"
+            android:background="@drawable/selector_bg_main_04_bt"
+            android:tag="{120,25,130,0}(0,75,26)"
+            android:text="@string/mm_08"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/store_house_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_01"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20px"
+            android:clipToPadding="false"
+            android:tag="[0,0,0,0](0,0){20,20,20,0}"
+            tools:listitem="@layout/list_06_item_view"></android.support.v7.widget.RecyclerView>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>
